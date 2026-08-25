@@ -1,0 +1,84 @@
+import { useState } from 'react'
+import { NavLink } from 'react-router'
+import { useTranslations } from 'use-intl'
+import { useLocale } from '../../hooks/useLocale'
+import { cn } from '../../lib/cn'
+import { pagePath } from '../../routes/paths'
+import Button from '../Button'
+
+const WHATSAPP_HREF = 'https://wa.me/351927350019'
+
+const pillClass = ({ isActive }: { isActive: boolean }) =>
+  cn(
+    'rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200',
+    isActive
+      ? 'bg-lavender text-indigo'
+      : 'text-ink hover:bg-lavender hover:text-indigo',
+  )
+
+export default function Nav() {
+  const t = useTranslations()
+  const locale = useLocale()
+  const [open, setOpen] = useState(false)
+
+  const links = [
+    { to: pagePath('about', locale), label: t('common.nav.about') },
+    { to: pagePath('services', locale), label: t('common.nav.services') },
+    { to: pagePath('pricing', locale), label: t('common.nav.pricing') },
+    { to: pagePath('booking', locale), label: t('common.nav.booking') },
+    { to: pagePath('contact', locale), label: t('common.nav.contact') },
+  ]
+
+  return (
+    <nav className="sticky top-0 z-20 border-b border-ink-subtle bg-cream">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:px-8 lg:hidden">
+        <Button
+          variant="bare"
+          onClick={() => setOpen((isOpen) => !isOpen)}
+          ariaLabel={t('common.nav.menu')}
+          ariaExpanded={open}
+          className="flex size-11 flex-col items-center justify-center gap-2"
+        >
+          <span className="block h-0.5 w-5 rounded bg-ink" />
+          <span className="block h-0.5 w-5 rounded bg-ink" />
+          <span className="block h-0.5 w-5 rounded bg-ink" />
+        </Button>
+      </div>
+
+      {open && (
+        <div className="flex flex-col border-t border-ink-subtle bg-cream px-4 pb-4 sm:px-8 lg:hidden">
+          {links.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              end
+              onClick={() => setOpen(false)}
+              className={({ isActive }) =>
+                cn(
+                  'border-b border-ink-subtle py-4 text-lg font-semibold',
+                  isActive ? 'text-indigo' : 'text-ink',
+                )
+              }
+            >
+              {link.label}
+            </NavLink>
+          ))}
+          <Button to={WHATSAPP_HREF} className="mt-4 px-4">
+            {t('common.cta.freeAssessmentShort')}
+          </Button>
+        </div>
+      )}
+
+      <div className="mx-auto hidden max-w-6xl flex-wrap items-center gap-2 px-4 py-2 sm:px-8 lg:flex">
+        {links.map((link) => (
+          <NavLink key={link.to} to={link.to} end className={pillClass}>
+            {link.label}
+          </NavLink>
+        ))}
+        <Button to={WHATSAPP_HREF} className="ml-auto px-6 py-3 text-xs">
+          {t('common.cta.freeAssessmentShort')}
+        </Button>
+      </div>
+    </nav>
+  )
+}

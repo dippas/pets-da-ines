@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "home": {
+      "title": "Os Pets da Inês — Pet Sitter in Barcarena",
+      "description": "Pet boarding, pet sitting and dog walking in Barcarena, with dedicated, personalised care. Free initial assessment."
+    },
+    "about": {
+      "title": "About Me | Os Pets da Inês",
+      "description": "Meet Inês, a pet sitter in Barcarena passionate about animals, giving personal, attentive care to every dog and cat."
+    },
+    "services": {
+      "title": "Services | Os Pets da Inês",
+      "description": "Pet Boarding, Pet Sitting and Dog Walking in Barcarena. Free, no-commitment initial assessment."
+    },
+    "pricing": {
+      "title": "Pricing | Os Pets da Inês",
+      "description": "Pricing for pet boarding, pet sitting and dog walking in Barcarena. Calculated by number of dogs and weekly frequency."
+    },
+    "booking": {
+      "title": "Booking Conditions | Os Pets da Inês",
+      "description": "How bookings, deposits, cancellations and scheduling work for pet sitting services in Barcarena."
+    },
+    "contact": {
+      "title": "Contact | Os Pets da Inês",
+      "description": "Reach Inês via WhatsApp, email or Instagram. Pet sitting services in Barcarena, Rua Teófilo Braga."
+    }
+  },
+  "common": {
+    "nav": {
+      "about": "About Me",
+      "services": "Services",
+      "pricing": "Pricing",
+      "booking": "Booking Conditions",
+      "contact": "Contact",
+      "menu": "Menu"
+    },
+    "language": { "pt": "PT", "en": "EN" },
+    "brand": { "name": "Os Pets da Inês", "tagline": "Daily Care" },
+    "cta": {
+      "freeAssessmentShort": "Free assessment",
+      "freeAssessment": "Book a free assessment",
+      "seeServices": "See the services",
+      "learnMore": "Learn more",
+      "seePricing": "See pricing",
+      "openMaps": "Open in Maps"
+    },
+    "footer": {
+      "addressTitle": "Location",
+      "hoursTitle": "Opening Hours",
+      "hours": "Monday to Sunday, 08:00 – 20:00",
+      "contactTitle": "Contact",
+      "tagline": "Dedicated, personalised care, given with love, to pets.",
+      "founded": "Since 17 November 2024",
+      "rights": "© 2026 Os Pets da Inês — All rights reserved.",
+      "complaintsBook": "Complaints Book"
+    },
+    "carousel": { "previous": "Previous", "next": "Next" },
+    "cookieBanner": {
+      "text": "We use cookies to improve your experience on this site. You can accept or decline.",
+      "accept": "Accept",
+      "decline": "Decline",
+      "mapPlaceholder": "Accept cookies to load the map."
+    }
+  },
+  "home": {
+    "eyebrow": "Barcarena · since 2024",
+    "heading": "Hi! I'm Inês, and I care for your pet as if it were my own.",
+    "body1": "\"Os Pets da Inês\" was born on 17 November 2024 with a very clear purpose: to offer dedicated, personalised care, given with love, to pets.",
+    "body2": "I personally look after every animal myself, making sure they're safe and well, and I always send owners updates so they never have to worry.",
+    "services": {
+      "eyebrow": "Our services",
+      "heading": "Three ways to care for your pet"
+    },
+    "badges": {
+      "allServices": "On every service",
+      "assessment": "Free initial assessment",
+      "updates": "Photos and videos every day",
+      "pets": "Dogs and cats, any age"
+    },
+    "testimonials": {
+      "eyebrow": "Google reviews",
+      "heading": "What owners say",
+      "quotes": [
+        {
+          "quote": "Excellent service! Inês is very affectionate and attentive with our cats and took great care of them. This is the second time she's looked after our boys and we recommend her 100%. She sends photos and videos every day, and a status update on how they are and how they behaved.",
+          "author": "Márcia Sousa"
+        },
+        {
+          "quote": "A very positive experience, super attentive with the animals! Our dog is reactive around some dogs and people and ADORES Inês! We always feel at ease leaving our dog with her, and we love the videos and photos she sends. 10/10, an excellent professional and a great person!",
+          "author": "Diogo Maçarico"
+        },
+        {
+          "quote": "For two weeks, Inês was home in the truest sense of the word. Being home means cuddles, affection, walks, treats and lots of play! We always knew they were in good hands, and Inês kept in constant contact with us. We recommend her and trust her with our eyes closed!",
+          "author": "Marta Paixão"
+        }
+      ]
+    }
+  },
+  "about": {
+    "eyebrow": "About me",
+    "heading": "Inês Paulo",
+    "body1": "Hi! My name is Inês, I'm 27 years old, and I've been passionate about animals for as long as I can remember.",
+    "body2": "I grew up surrounded by dogs and cats, and that closeness became an essential part of my life. Over the years I've cared for animals of every age, size and personality — friends' and family's pets as well as clients' — and every experience deepened my love for them.",
+    "body3": "I believe every animal is unique and deserves full attention and care, especially when their owners aren't around.",
+    "body4": "I'm attentive, patient and trustworthy, and I make a point of adapting to each animal's specific needs. I also have experience with dogs and cats of many breeds and personalities, which lets me understand and respect what makes each of them different."
+  },
+  "services": {
+    "hub": {
+      "eyebrow": "Services",
+      "heading": "Our services",
+      "intro": "Every service starts with a free, no-commitment initial assessment, so we get to know your pets and tailor the service to your needs."
+    },
+    "petBoarding": {
+      "title": "Pet Boarding",
+      "cardText": "Your pet stays in a family environment, with personalised attention, plenty of play and affection.",
+      "detail1": "Travelling for work or taking a few days off, and worried about your pet's wellbeing? Let me help make sure your furry friend gets all the care they deserve while you're away!",
+      "detail2": "With Pet Boarding, your pet enjoys a family environment, personalised attention, plenty of play and affection at the pet-sitter's home."
+    },
+    "petSitting": {
+      "title": "Pet Sitting",
+      "cardText": "I visit your pet at home: feeding, fresh water, playtime and company, without breaking their routine.",
+      "detail1": "I visit your pet at your own home, taking care of feeding, fresh water, playtime and company, keeping their usual routine stress-free.",
+      "detail2": "You get photos, videos and a status update after every visit.",
+      "detail3": "I also do cat sitting, always charged at the 1-dog rate regardless of how many cats are involved."
+    },
+    "dogWalking": {
+      "title": "Dog Walking",
+      "cardText": "Walks adapted to your dog's needs and fitted around your schedule. Happy, healthy dogs.",
+      "detail1": "Out of the house all day, unwell, or just don't have time to walk your dog? Let me help give your furry companion the walks they deserve!",
+      "detail2": "Walks are adapted to your dog's needs and fitted around your schedule, so your dog gets all the attention they need.",
+      "galleryEyebrow": "Gallery · Dog Walking",
+      "galleryHeading": "Walking companions"
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "heading": "How much it costs to care for your pet",
+    "intro": "The price depends on the service, the number of dogs and the weekly frequency. The more regular it is, the lower the price per session.",
+    "frequency": "Frequency",
+    "dogsCol": ["1 dog", "2 dogs", "3 dogs"],
+    "seasonLow": "Low season",
+    "seasonHigh": "High season",
+    "boardingFull": "Pet Boarding · 1 day (24 hours)",
+    "boardingHalf": "Pet Boarding · half day (12 hours)",
+    "sittingTitle": "Pet Sitting",
+    "walkingTitle": "Dog Walking",
+    "sittingCatsNote": "Cat sitting is always charged at the 1-dog rate, regardless of how many cats are involved.",
+    "depositNote": "Bookings are only confirmed once a 50% Booking Deposit is paid. Cancellation policies vary between high and low season — see <link>booking conditions</link>.",
+    "transportHeading": "Transport",
+    "transportIntro": "Pick-up and drop-off for your pet, by distance.",
+    "transportRange": "Distance range",
+    "transportOne": "One way",
+    "transportBoth": "Round trip",
+    "highSeasonLabel": "High season dates",
+    "bands": {
+      "gt4": "More than 4 nights",
+      "3to4": "3 to 4 nights",
+      "1to2": "1 to 2 nights",
+      "gt9": "More than 9x per week",
+      "5to9": "5 to 9x per week",
+      "1to4": "1 to 4x per week"
+    },
+    "transport": {
+      "r0_3": { "range": "0 km – 3 km", "one": "€3.50", "both": "€7" },
+      "r3_7": { "range": "3.1 km – 7 km", "one": "€5.50", "both": "€11" },
+      "r7_12": { "range": "7.1 km – 12 km", "one": "€8", "both": "€16" },
+      "r12_20": { "range": "12.1 km – 20 km", "one": "€12.50", "both": "€25" },
+      "r20plus": {
+        "range": "More than 20 km",
+        "one": "€15 + €0.80/km extra",
+        "both": "On request"
+      }
+    },
+    "highSeasonDates": [
+      "13/02 to 17/02",
+      "27/03 to 12/04",
+      "01/06 to 15/09",
+      "28/11 to 08/12",
+      "18/12 to 07/01"
+    ],
+    "calculator": {
+      "heading": "Estimate your price",
+      "service": "Service",
+      "season": "Season",
+      "stay": "Length of stay",
+      "stayFull": "Full day · 24h",
+      "stayHalf": "Half day · 12h",
+      "dogs": "Number of dogs",
+      "nightsPerWeek": "Nights per week",
+      "timesPerWeek": "Times per week",
+      "perNight": "Price per night",
+      "perVisit": "Price per visit",
+      "perWalk": "Price per walk",
+      "weekTotal": "Total per week",
+      "assessment": "Free initial assessment",
+      "deposit": "50% booking deposit at time of booking",
+      "cancellation": "Cancellation depends on season (<link>see conditions</link>)",
+      "requestQuote": "Request a quote"
+    }
+  },
+  "booking": {
+    "eyebrow": "Bookings",
+    "heading": "Booking Conditions",
+    "intro": "How it works, from first contact to coming home.",
+    "steps": [
+      {
+        "title": "Free initial assessment",
+        "body": "We schedule a no-commitment meeting to get to know your pet, their routines, and work out which service makes the most sense."
+      },
+      {
+        "title": "Bookings",
+        "body": "Bookings are only confirmed once a 50% Booking Deposit is paid."
+      },
+      {
+        "title": "Cancellation policy",
+        "body": ""
+      },
+      {
+        "title": "Trial day",
+        "body": "Every new dog must complete a mandatory Trial Day. If severe anxiety or a need for continuous supervision is identified, an individualised-care fee of +5€ per day applies. If reactivity towards other animals is identified, or full exclusivity is required (no integration or stay with other guests), the booking may still be accepted — but due to the separation logistics required, it will be charged at the 2-dog occupancy rate."
+      },
+      {
+        "title": "Schedule management",
+        "body": "Official hours are 08:00 to 20:00. An After-Hours fee of 5€ applies per hour or part thereof. From 22:00, doors close for the night and the pet stays over (an extra full day is billed for the following day)."
+      },
+      {
+        "title": "During the stay",
+        "body": "You receive photos, videos and a status update every day, so you never have to worry."
+      }
+    ],
+    "cancellation": {
+      "high": {
+        "label": "High season",
+        "lines": [
+          "More than 30 days' notice: full deposit refund.",
+          "Between 15 and 30 days: 50% of the deposit is retained.",
+          "Less than 15 days: 100% of the deposit is retained."
+        ]
+      },
+      "low": {
+        "label": "Low season",
+        "lines": [
+          "More than 15 days' notice: full deposit refund.",
+          "Between 7 and 15 days: 50% of the deposit is retained.",
+          "Between 3 and 7 days: 100% of the deposit is retained."
+        ]
+      },
+      "highSeasonLabel": "High season dates:"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Get in touch",
+    "whatsappLabel": "WhatsApp · fast reply",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram · day to day",
+    "whereLabel": "Where I am",
+    "hoursNote": "Monday to Sunday, 08:00 – 20:00. Outside these hours a 5€ per hour (or part thereof) fee applies."
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "home": {
+      "title": "Os Pets da Inês — Pet Sitter em Barcarena",
+      "description": "Pet boarding, pet sitting e passeios de cães em Barcarena, com cuidados dedicados e personalizados. Avaliação inicial gratuita."
+    },
+    "about": {
+      "title": "Sobre Mim | Os Pets da Inês",
+      "description": "Conheça a Inês, pet sitter em Barcarena apaixonada por animais, com cuidado pessoal e atento a cada cão e gato."
+    },
+    "services": {
+      "title": "Serviços | Os Pets da Inês",
+      "description": "Pet Boarding, Pet Sitting e Dog Walking em Barcarena. Avaliação inicial gratuita e sem compromisso."
+    },
+    "pricing": {
+      "title": "Preçário | Os Pets da Inês",
+      "description": "Preços de pet boarding, pet sitting e passeios de cães em Barcarena. Calcule o valor conforme o número de cães e a frequência."
+    },
+    "booking": {
+      "title": "Condições de Reserva | Os Pets da Inês",
+      "description": "Como funcionam as reservas, sinal, cancelamentos e horários dos serviços de pet sitting em Barcarena."
+    },
+    "contact": {
+      "title": "Contactos | Os Pets da Inês",
+      "description": "Fale com a Inês por WhatsApp, email ou Instagram. Serviços de pet sitting em Barcarena, Rua Teófilo Braga."
+    }
+  },
+  "common": {
+    "nav": {
+      "about": "Sobre Mim",
+      "services": "Serviços",
+      "pricing": "Preçário",
+      "booking": "Condições de Reserva",
+      "contact": "Contactos",
+      "menu": "Menu"
+    },
+    "language": { "pt": "PT", "en": "EN" },
+    "brand": { "name": "Os Pets da Inês", "tagline": "Daily Care" },
+    "cta": {
+      "freeAssessmentShort": "Avaliação gratuita",
+      "freeAssessment": "Marcar avaliação gratuita",
+      "seeServices": "Ver os serviços",
+      "learnMore": "Saber mais",
+      "seePricing": "Ver preçário",
+      "openMaps": "Abrir no Maps"
+    },
+    "footer": {
+      "addressTitle": "Localização",
+      "hoursTitle": "Horário",
+      "hours": "Segunda a domingo, 08:00 – 20:00",
+      "contactTitle": "Contactos",
+      "tagline": "Cuidados dedicados, personalizados e com amor aos animais de estimação.",
+      "founded": "Desde 17 de novembro de 2024",
+      "rights": "© 2026 Os Pets da Inês — Todos os direitos reservados.",
+      "complaintsBook": "Livro de Reclamações"
+    },
+    "carousel": { "previous": "Anterior", "next": "Seguinte" },
+    "cookieBanner": {
+      "text": "Utilizamos cookies para melhorar a sua experiência neste site. Pode aceitar ou recusar.",
+      "accept": "Aceitar",
+      "decline": "Recusar",
+      "mapPlaceholder": "Aceite os cookies para carregar o mapa."
+    }
+  },
+  "home": {
+    "eyebrow": "Barcarena · desde 2024",
+    "heading": "Olá! Sou a Inês, e cuido do seu animal como se fosse meu.",
+    "body1": "\"Os Pets da Inês\" nasceu a 17 de Novembro de 2024 com um propósito muito claro: oferecer cuidados dedicados, personalizados e com amor aos animais de estimação.",
+    "body2": "Sou eu que cuido pessoalmente de cada animal, assegurando o seu bem-estar e segurança e enviando sempre atualizações aos tutores para que não se preocupem.",
+    "services": {
+      "eyebrow": "Os nossos serviços",
+      "heading": "Três formas de cuidar do seu animal"
+    },
+    "badges": {
+      "allServices": "Em todos os serviços",
+      "assessment": "Avaliação inicial gratuita",
+      "updates": "Fotos e vídeos todos os dias",
+      "pets": "Cães e gatos, todas as idades"
+    },
+    "testimonials": {
+      "eyebrow": "Avaliações no Google",
+      "heading": "O que dizem os tutores",
+      "quotes": [
+        {
+          "quote": "Serviço excelente! A Inês é muito carinhosa e atenciosa com os nossos gatos e cuidou muito bem deles. Já é a segunda vez que a Inês cuida dos nossos meninos e recomendamos a 100%. Envia todos os dias fotos e vídeos, e faz o ponto de situação de como eles estão e como se portaram.",
+          "author": "Márcia Sousa"
+        },
+        {
+          "quote": "Experiência muito positiva, super atenciosa com os animais! O nosso cão é um cão reativo com alguns cães e pessoas e ADORA a Inês! Sentimo-nos sempre tranquilos de deixar o nosso cão com a Inês e adoramos os vídeos e fotos que ela vai enviando dele. 10/10 Uma excelente profissional e ótima pessoa!",
+          "author": "Diogo Maçarico"
+        },
+        {
+          "quote": "Foram duas semanas em que a Inês foi casa no verdadeiro sentido da palavra. Ser casa é ser colo, mimo, passeios, docinhos e muitas brincadeiras! Soubemos sempre que estavam bem entregues e a Inês esteve em constante contacto connosco. Recomendamos e confiamos de olhos fechados!",
+          "author": "Marta Paixão"
+        }
+      ]
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre mim",
+    "heading": "Inês Paulo",
+    "body1": "Olá! O meu nome é Inês, tenho 27 anos e sou apaixonada por animais desde que me lembro.",
+    "body2": "Cresci rodeada por cães e gatos, e essa convivência tornou-se uma parte essencial da minha vida. Ao longo dos anos, cuidei de animais de todas as idades, tamanhos e personalidades — tanto de amigos e familiares quanto de clientes — e cada experiência reforçou o meu amor por eles.",
+    "body3": "Acredito que cada animal é único e merece toda a atenção e carinho, especialmente quando os seus donos não estão por perto.",
+    "body4": "Sou uma pessoa atenta, paciente e de confiança, e faço questão de adaptar-me às necessidades específicas de cada animal. Além disso, tenho experiência com cães e gatos de várias raças e personalidades, o que me permite compreender e respeitar as suas particularidades."
+  },
+  "services": {
+    "hub": {
+      "eyebrow": "Serviços",
+      "heading": "Os nossos serviços",
+      "intro": "Antes de qualquer serviço é feita uma avaliação inicial gratuita e sem compromisso para conhecermos melhor os seus animais e ajustar os nossos serviços às vossas necessidades."
+    },
+    "petBoarding": {
+      "title": "Pet Boarding",
+      "cardText": "O seu animal fica alojado em ambiente familiar, com atenção personalizada, muita brincadeira e carinho.",
+      "detail1": "Vais viajar em trabalho ou tirar alguns dias de férias e preocupas-te com o bem-estar do teu animal de estimação? Deixa-me ajudar-te a garantir que o teu patudo receba todos os cuidados que merece enquanto estiveres fora!",
+      "detail2": "Com o Pet Boarding, o teu animal de estimação vai desfrutar de um ambiente familiar, atenção personalizada, muita brincadeira e carinho na casa do pet-sitter."
+    },
+    "petSitting": {
+      "title": "Pet Sitting",
+      "cardText": "Visito o seu animal em casa: alimentação, água fresca, brincadeiras e companhia, sem quebrar a rotina.",
+      "detail1": "Visito o seu animal na sua própria casa, garantindo alimentação, água fresca, brincadeiras e companhia, mantendo a rotina habitual sem stress para o animal.",
+      "detail2": "Recebe fotos, vídeos e o ponto de situação de cada visita.",
+      "detail3": "Também faço pet sitting de gatos, com a tarifa de 1 cão qualquer que seja o número de gatos."
+    },
+    "dogWalking": {
+      "title": "Dog Walking",
+      "cardText": "Passeios adaptados às necessidades do seu cão e ajustados ao seu horário. Cães felizes e saudáveis.",
+      "detail1": "Trabalhas o dia todo fora de casa, ficaste doente ou não tens tempo para passear o teu cão? Deixa-me ajudar-te a proporcionar os passeios que o teu companheiro peludo merece!",
+      "detail2": "Os passeios são adaptados às necessidades do teu cão e ajustados ao teu horário, garantindo que o teu cão receba toda a atenção necessária.",
+      "galleryEyebrow": "Galeria · Dog Walking",
+      "galleryHeading": "Companheiros dos passeios"
+    }
+  },
+  "pricing": {
+    "eyebrow": "Preçário",
+    "heading": "Quanto custa cuidar do seu animal",
+    "intro": "O preço depende do serviço, do número de cães e da frequência semanal. Quanto mais regular, menor o valor por sessão.",
+    "frequency": "Frequência",
+    "dogsCol": ["1 cão", "2 cães", "3 cães"],
+    "seasonLow": "Época baixa",
+    "seasonHigh": "Época alta",
+    "boardingFull": "Pet Boarding · 1 dia (24 horas)",
+    "boardingHalf": "Pet Boarding · meio dia (12 horas)",
+    "sittingTitle": "Pet Sitting",
+    "walkingTitle": "Dog Walking",
+    "sittingCatsNote": "Pet Sitting de gatos: aplica-se sempre a tarifa de 1 cão, independentemente do número de gatos a acompanhar.",
+    "depositNote": "As marcações só se consideram concluídas mediante pagamento de um Sinal de Reserva de 50%. As políticas de cancelamento variam entre época alta e época baixa — ver <link>condições de reserva</link>.",
+    "transportHeading": "Transportes",
+    "transportIntro": "Recolha e entrega do seu animal, por deslocação.",
+    "transportRange": "Raio de distância",
+    "transportOne": "Ida ou volta",
+    "transportBoth": "Ida + volta",
+    "highSeasonLabel": "Épocas altas",
+    "bands": {
+      "gt4": "Mais de 4 noites",
+      "3to4": "3 a 4 noites",
+      "1to2": "1 a 2 noites",
+      "gt9": "Mais de 9x por semana",
+      "5to9": "5 a 9x por semana",
+      "1to4": "1 a 4x por semana"
+    },
+    "transport": {
+      "r0_3": { "range": "0 km – 3 km", "one": "3,50€", "both": "7€" },
+      "r3_7": { "range": "3,1 km – 7 km", "one": "5,50€", "both": "11€" },
+      "r7_12": { "range": "7,1 km – 12 km", "one": "8€", "both": "16€" },
+      "r12_20": { "range": "12,1 km – 20 km", "one": "12,50€", "both": "25€" },
+      "r20plus": {
+        "range": "Mais de 20 km",
+        "one": "15€ + 0,80€/km extra",
+        "both": "Sob orçamento"
+      }
+    },
+    "highSeasonDates": [
+      "13/02 a 17/02",
+      "27/03 a 12/04",
+      "01/06 a 15/09",
+      "28/11 a 08/12",
+      "18/12 a 07/01"
+    ],
+    "calculator": {
+      "heading": "Calcular a sua estimativa",
+      "service": "Serviço",
+      "season": "Época",
+      "stay": "Duração da estadia",
+      "stayFull": "Dia completo · 24h",
+      "stayHalf": "Meio dia · 12h",
+      "dogs": "Número de cães",
+      "nightsPerWeek": "Noites por semana",
+      "timesPerWeek": "Vezes por semana",
+      "perNight": "Valor por noite",
+      "perVisit": "Valor por visita",
+      "perWalk": "Valor por passeio",
+      "weekTotal": "Total por semana",
+      "assessment": "Avaliação inicial gratuita",
+      "deposit": "Sinal de reserva de 50% na marcação",
+      "cancellation": "Cancelamento conforme a época (<link>ver condições</link>)",
+      "requestQuote": "Pedir orçamento"
+    }
+  },
+  "booking": {
+    "eyebrow": "Reservas",
+    "heading": "Condições de Reserva",
+    "intro": "Como funciona, do primeiro contacto ao regresso a casa.",
+    "steps": [
+      {
+        "title": "Avaliação inicial gratuita",
+        "body": "Marcamos um encontro sem compromisso para conhecer o seu animal, as suas rotinas e perceber que serviço faz mais sentido."
+      },
+      {
+        "title": "Marcações",
+        "body": "As marcações só se consideram concluídas mediante pagamento de um Sinal de Reserva de 50%."
+      },
+      {
+        "title": "Políticas de cancelamento",
+        "body": ""
+      },
+      {
+        "title": "Dia de teste",
+        "body": "Todos os cães novos devem realizar obrigatoriamente o Dia de Teste. Caso seja identificada ansiedade grave ou necessidade de supervisão contínua, será aplicada uma taxa de cuidado individualizado de +5€ por dia. Caso se identifique reatividade a outros animais ou necessite de um ambiente de exclusividade total (sem possibilidade de integração ou estadia com os restantes hóspedes), a reserva poderá ser aceite. No entanto, devido à logística de separação exigida a essa estadia será aplicada uma tarifa correspondente ao valor de ocupação de 2 cães."
+      },
+      {
+        "title": "Gestão de horários",
+        "body": "Horário oficial das 08:00 às 20:00. Taxa Fora de Horas de 5€ por cada hora ou fração. A partir das 22:00, as portas fecham obrigatoriamente e o animal passa a noite (fatura-se uma diária completa adicional no dia seguinte)."
+      },
+      {
+        "title": "Durante a estadia",
+        "body": "Recebe fotos, vídeos e o ponto de situação todos os dias, para não ter de se preocupar."
+      }
+    ],
+    "cancellation": {
+      "high": {
+        "label": "Época alta",
+        "lines": [
+          "Mais de 30 dias de antecedência: devolução total do sinal.",
+          "Entre 15 e 30 dias: retenção de 50% do valor do sinal.",
+          "Menos de 15 dias: retenção de 100% do valor do sinal."
+        ]
+      },
+      "low": {
+        "label": "Época baixa",
+        "lines": [
+          "Mais de 15 dias de antecedência: devolução total do sinal.",
+          "Entre 7 e 15 dias: retenção de 50% do valor do sinal.",
+          "Entre 3 e 7 dias: retenção de 100% do valor do sinal."
+        ]
+      },
+      "highSeasonLabel": "Épocas altas:"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contactos",
+    "heading": "Falar comigo",
+    "whatsappLabel": "WhatsApp · resposta rápida",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram · dia a dia",
+    "whereLabel": "Onde estou",
+    "hoursNote": "Segunda a domingo, 08:00 – 20:00. Fora deste horário aplica-se a taxa de 5€ por hora ou fração."
+  }
+}

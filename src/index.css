@@ -1,0 +1,246 @@
+@import "@fontsource/baloo-2/400.css";
+@import "@fontsource/baloo-2/500.css";
+@import "@fontsource/baloo-2/600.css";
+@import "@fontsource/karla/400.css";
+@import "@fontsource/karla/500.css";
+@import "@fontsource/karla/600.css";
+@import "@fontsource/karla/700.css";
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 48rem;
+
+  --color-navy: oklch(29.8% 0.1205 273.37);
+  --color-ink: oklch(26.63% 0.017 275.34);
+  --color-lavender: oklch(95.44% 0.0175 279.06);
+  --color-panel: oklch(95.71% 0.0162 278.51);
+  --color-indigo: oklch(47.42% 0.199 272.12);
+  --color-indigo-light: oklch(66.73% 0.1605 276.4);
+  --color-gold: oklch(85.92% 0.0777 86.63);
+  --color-gold-dark: oklch(52% 0.109 87.67);
+  --color-cream: oklch(97.07% 0.0027 286.35);
+  --color-off-white: oklch(97.7% 0.0114 84.58);
+  --color-charcoal: oklch(20.19% 0.0121 277.81);
+  --color-blob: oklch(79.81% 0.0816 276.66);
+  --color-placeholder-a: oklch(92.7% 0.0271 85.67);
+  --color-placeholder-b: oklch(96.25% 0.0171 84.59);
+
+  --font-sans: "Karla", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Baloo 2", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --tracking-label: 0.18em;
+  --tracking-eyebrow: 0.24em;
+  --tracking-badge: 0.16em;
+  --tracking-tagline: 0.34em;
+
+  --container-measure-sm: 52ch;
+  --container-measure: 62ch;
+  --container-measure-lg: 64ch;
+
+  --radius-blob-top: 16.25rem;
+  --radius-blob-bottom: 2.25rem;
+  --radius-blob-lg-top: 17.5rem;
+  --radius-blob-lg-bottom: 2.5rem;
+
+  --height-hero-compact: clamp(17.5rem, 46vw, 25rem);
+  --height-hero-wide: clamp(18.75rem, 52vw, 32.5rem);
+  --height-about-photo: clamp(20rem, 52vw, 28.75rem);
+  --height-service-detail: clamp(15.625rem, calc(26vw + 9.5625rem), 26.25rem);
+  --height-contact-map: clamp(17.5rem, calc(15.5vw + 13.875rem), 26.25rem);
+  --height-service-card: clamp(11.875rem, calc(10.8vw + 9.375rem), 16.25rem);
+}
+
+@utility card {
+  @apply rounded-3xl border border-ink-subtle bg-white;
+}
+
+@utility icon-circle {
+  @apply flex size-11 items-center justify-center rounded-full;
+}
+
+@utility contact-card {
+  @apply flex flex-col gap-6 p-8 transition-transform duration-200 hover:-translate-y-1;
+}
+
+@utility prose {
+  @apply leading-relaxed text-ink-secondary;
+}
+
+@utility text-ink-secondary {
+  @apply text-ink/70;
+}
+
+@utility text-ink-muted {
+  @apply text-ink/45;
+}
+
+@utility border-ink-strong {
+  @apply border-ink/20;
+}
+
+@utility border-ink-subtle {
+  @apply border-ink/10;
+}
+
+@utility text-off-white-strong {
+  @apply text-off-white/80;
+}
+
+@utility text-off-white-secondary {
+  @apply text-off-white/70;
+}
+
+@utility border-off-white-subtle {
+  @apply border-off-white/16;
+}
+
+@utility text-ink-faint {
+  @apply text-ink/30;
+}
+
+@utility text-off-white-muted {
+  @apply text-off-white/50;
+}
+
+@utility bg-off-white-faint {
+  @apply bg-off-white/7;
+}
+
+@utility text-navy-secondary {
+  @apply text-navy/65;
+}
+
+@utility border-navy-strong {
+  @apply border-navy/16;
+}
+
+@utility border-navy-subtle {
+  @apply border-navy/10;
+}
+
+@utility bg-gold-strong {
+  @apply bg-gold/22;
+}
+
+@utility bg-gold-subtle {
+  @apply bg-gold/16;
+}
+
+@utility border-indigo-ring {
+  @apply border-indigo/35;
+}
+
+@utility border-gold-ring {
+  @apply border-gold/35;
+}
+
+@utility label-eyebrow {
+  @apply block text-xs font-bold tracking-eyebrow text-gold-dark uppercase;
+}
+
+@utility label-widest {
+  @apply text-xs font-bold tracking-widest uppercase;
+}
+
+@utility label-section {
+  @apply text-xs font-bold tracking-label text-gold uppercase;
+}
+
+@utility label-badge {
+  @apply text-xs font-bold tracking-badge uppercase;
+}
+
+@utility btn-base {
+  @apply transition-colors duration-200;
+}
+
+@utility btn-solid {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-navy px-8 py-4 text-sm font-bold text-cream hover:bg-indigo-light hover:text-off-white;
+}
+
+@utility btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-indigo-ring px-8 py-4 text-sm font-bold text-indigo hover:border-indigo hover:bg-panel;
+}
+
+@utility btn-link {
+  @apply font-semibold text-indigo hover:text-indigo-light;
+}
+
+@utility rounded-blob {
+  @apply rounded-t-blob-top rounded-b-blob-bottom;
+}
+
+@utility rounded-blob-lg {
+  @apply rounded-t-blob-lg-top rounded-b-blob-lg-bottom;
+}
+
+@utility bg-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-placeholder-a) 0 0.5625rem,
+    var(--color-placeholder-b) 0.5625rem 1.125rem
+  );
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-cream font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-heading font-semibold;
+  }
+
+  a {
+    @apply text-indigo hover:text-indigo-light;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply rounded-full border transition-colors duration-200;
+
+  &::after {
+    @apply size-2 border-r-2 border-b-2 content-[''];
+  }
+}
+
+.swiper-button-prev::after {
+  @apply -mr-0.5 rotate-135;
+}
+
+.swiper-button-next::after {
+  @apply -ml-0.5 -rotate-45;
+}
+
+.swiper-gallery {
+  @apply px-4;
+
+  @variant sm {
+    @apply px-8;
+  }
+}
+
+.swiper-nav-light .swiper-slide {
+  @apply h-auto;
+}
+
+.carousel-heading-nav {
+  @apply relative z-10 mb-4 flex justify-end gap-3;
+
+  @variant sm {
+    @apply absolute right-0 mb-0 -top-21.5;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply static mt-0 border-ink-subtle bg-white hover:border-indigo;
+  }
+}
+
+.swiper-nav-dark .swiper-button-prev,
+.swiper-nav-dark .swiper-button-next {
+  @apply border-off-white-subtle bg-transparent hover:border-gold;
+}
