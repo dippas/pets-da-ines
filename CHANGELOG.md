@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.5](https://github.com/dippas/pets-da-ines/compare/v1.0.4...v1.0.5) (2026-08-26)
+
+### Bug Fixes
+
+* UI polish ([#6](https://github.com/dippas/pets-da-ines/issues/6)) ([a47e5d9](https://github.com/dippas/pets-da-ines/commit/a47e5d93871a0d40b4d363b70005085ff69377d1))
+
 ## [1.0.4](https://github.com/dippas/pets-da-ines/compare/v1.0.3...v1.0.4) (2026-08-26)
 
 ### Bug Fixes
