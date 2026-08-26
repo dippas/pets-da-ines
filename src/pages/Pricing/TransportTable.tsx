@@ -14,6 +14,21 @@ export default function TransportTable() {
       <p className="mb-6 text-sm text-ink-muted">
         {t('pricing.transportIntro')}
       </p>
+      <div className="mb-6 rounded-2xl bg-panel px-6 py-6">
+        <Label className="mb-3 text-gold-dark">
+          {t('pricing.highSeasonLabel')}
+        </Label>
+        <div className="flex flex-wrap gap-3">
+          {highSeasonDates.map((range) => (
+            <span
+              key={range}
+              className="rounded-full border border-ink-subtle bg-white px-4 py-2 text-sm text-ink-secondary"
+            >
+              {range}
+            </span>
+          ))}
+        </div>
+      </div>
       <div className="card overflow-x-auto">
         <table className="w-full min-w-md border-collapse text-left">
           <thead>
@@ -45,21 +60,6 @@ export default function TransportTable() {
             ))}
           </tbody>
         </table>
-      </div>
-      <div className="mt-6 rounded-2xl bg-panel px-6 py-6">
-        <Label className="mb-3 text-gold-dark">
-          {t('pricing.highSeasonLabel')}
-        </Label>
-        <div className="flex flex-wrap gap-3">
-          {highSeasonDates.map((range) => (
-            <span
-              key={range}
-              className="rounded-full border border-ink-subtle bg-white px-4 py-2 text-sm text-ink-secondary"
-            >
-              {range}
-            </span>
-          ))}
-        </div>
       </div>
     </div>
   )
