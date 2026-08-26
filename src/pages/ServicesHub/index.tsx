@@ -46,10 +46,8 @@ export default function ServicesHub() {
 
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16">
         <div className="max-w-measure-lg lg:max-w-none">
-          <Label className="mb-3 block text-gold-dark">01</Label>
-          <h2 className="mb-6 text-3xl font-bold text-ink sm:text-4xl">
-            {t('services.petBoarding.title')}
-          </h2>
+          <Label className="step-number">01</Label>
+          <h2 className="section-heading">{t('services.petBoarding.title')}</h2>
           <p className="mb-4 text-lg prose">
             {t('services.petBoarding.detail1')}
           </p>
@@ -64,7 +62,7 @@ export default function ServicesHub() {
         <Img
           src={petBoardingPhoto}
           alt=""
-          className="h-service-detail w-full rounded-3xl object-cover object-top"
+          className="h-service-detail w-full rounded-3xl object-cover"
         />
       </section>
 
@@ -73,11 +71,11 @@ export default function ServicesHub() {
           <Img
             src={petSittingPhoto}
             alt=""
-            className="h-service-detail w-full order-2 rounded-3xl object-cover object-top lg:order-0"
+            className="h-service-detail w-full order-2 rounded-3xl object-cover lg:order-0"
           />
           <div className="max-w-measure-lg lg:max-w-none">
-            <Label className="mb-3 block text-gold-dark">02</Label>
-            <h2 className="mb-6 text-3xl font-bold text-ink sm:text-4xl">
+            <Label className="step-number">02</Label>
+            <h2 className="section-heading">
               {t('services.petSitting.title')}
             </h2>
             <p className="mb-4 text-lg prose">
@@ -99,10 +97,8 @@ export default function ServicesHub() {
 
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16">
         <div className="max-w-measure-lg lg:max-w-none">
-          <Label className="mb-3 block text-gold-dark">03</Label>
-          <h2 className="mb-6 text-3xl font-bold text-ink sm:text-4xl">
-            {t('services.dogWalking.title')}
-          </h2>
+          <Label className="step-number">03</Label>
+          <h2 className="section-heading">{t('services.dogWalking.title')}</h2>
           <p className="mb-4 text-lg prose">
             {t('services.dogWalking.detail1')}
           </p>
@@ -117,7 +113,7 @@ export default function ServicesHub() {
         <Img
           src={dogWalkingPhoto}
           alt=""
-          className="h-service-detail w-full rounded-3xl object-cover object-top"
+          className="h-service-detail w-full rounded-3xl object-cover"
         />
       </section>
 
@@ -136,7 +132,7 @@ export default function ServicesHub() {
         </div>
         <Swiper
           modules={[Navigation]}
-          navigation
+          navigation={{ addIcons: false }}
           spaceBetween={12}
           slidesPerView={2}
           breakpoints={{ 768: { slidesPerView: 4 } }}
@@ -155,7 +151,7 @@ export default function ServicesHub() {
                     key={index}
                     src={dogWalkingPool[index]}
                     alt=""
-                    className="w-full rounded-2xl object-cover object-top"
+                    className="w-full rounded-2xl object-cover"
                   />
                 ))}
               </div>

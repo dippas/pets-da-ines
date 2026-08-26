@@ -106,15 +106,9 @@ export default function Home() {
           <Label tracking="badge" className="mr-2 text-navy-secondary">
             {t('home.badges.allServices')}
           </Label>
-          <span className="rounded-full border border-navy-strong bg-white px-4 py-2 text-sm font-semibold text-indigo">
-            {t('home.badges.assessment')}
-          </span>
-          <span className="rounded-full border border-navy-strong bg-white px-4 py-2 text-sm font-semibold text-indigo">
-            {t('home.badges.updates')}
-          </span>
-          <span className="rounded-full border border-navy-strong bg-white px-4 py-2 text-sm font-semibold text-indigo">
-            {t('home.badges.pets')}
-          </span>
+          <span className="badge-pill">{t('home.badges.assessment')}</span>
+          <span className="badge-pill">{t('home.badges.updates')}</span>
+          <span className="badge-pill">{t('home.badges.pets')}</span>
         </div>
       </section>
 

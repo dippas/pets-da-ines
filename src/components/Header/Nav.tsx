@@ -37,16 +37,20 @@ export default function Nav() {
           onClick={() => setOpen((isOpen) => !isOpen)}
           ariaLabel={t('common.nav.menu')}
           ariaExpanded={open}
-          className="flex size-11 flex-col items-center justify-center gap-2"
+          className="flex size-11 flex-col items-center justify-center gap-1"
         >
-          <span className="block h-0.5 w-5 rounded bg-ink" />
-          <span className="block h-0.5 w-5 rounded bg-ink" />
-          <span className="block h-0.5 w-5 rounded bg-ink" />
+          <span
+            className={cn('menu-bar', open && 'translate-y-1.5 rotate-45')}
+          />
+          <span className={cn('menu-bar', open && 'opacity-0')} />
+          <span
+            className={cn('menu-bar', open && '-translate-y-1.5 -rotate-45')}
+          />
         </Button>
       </div>
 
       {open && (
-        <div className="flex flex-col border-t border-ink-subtle bg-cream px-4 pb-4 sm:px-8 lg:hidden">
+        <div className="absolute inset-x-0 top-full flex flex-col border-t border-ink-subtle bg-cream px-4 pb-4 shadow-lg sm:px-8 lg:hidden">
           {links.map((link) => (
             <NavLink
               key={link.to}

@@ -22,8 +22,6 @@
   --color-off-white: oklch(97.7% 0.0114 84.58);
   --color-charcoal: oklch(20.19% 0.0121 277.81);
   --color-blob: oklch(79.81% 0.0816 276.66);
-  --color-placeholder-a: oklch(92.7% 0.0271 85.67);
-  --color-placeholder-b: oklch(96.25% 0.0171 84.59);
 
   --font-sans: "Karla", system-ui, "Segoe UI", Roboto, sans-serif;
   --font-heading: "Baloo 2", system-ui, "Segoe UI", Roboto, sans-serif;
@@ -47,7 +45,6 @@
   --height-about-photo: clamp(20rem, 52vw, 28.75rem);
   --height-service-detail: clamp(15.625rem, calc(26vw + 9.5625rem), 26.25rem);
   --height-contact-map: clamp(17.5rem, calc(15.5vw + 13.875rem), 26.25rem);
-  --height-service-card: clamp(11.875rem, calc(10.8vw + 9.375rem), 16.25rem);
 }
 
 @utility card {
@@ -158,6 +155,22 @@
   @apply inline-flex items-center justify-center gap-2 rounded-full bg-navy px-8 py-4 text-sm font-bold text-cream hover:bg-indigo-light hover:text-off-white;
 }
 
+@utility menu-bar {
+  @apply block h-0.5 w-5 rounded bg-ink transition-all duration-200;
+}
+
+@utility badge-pill {
+  @apply rounded-full border border-navy-strong bg-white px-4 py-2 text-sm font-semibold text-indigo;
+}
+
+@utility step-number {
+  @apply mb-3 block text-gold-dark;
+}
+
+@utility section-heading {
+  @apply mb-6 text-3xl font-bold text-ink sm:text-4xl;
+}
+
 @utility btn-outline {
   @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-indigo-ring px-8 py-4 text-sm font-bold text-indigo hover:border-indigo hover:bg-panel;
 }
@@ -172,14 +185,6 @@
 
 @utility rounded-blob-lg {
   @apply rounded-t-blob-lg-top rounded-b-blob-lg-bottom;
-}
-
-@utility bg-stripes {
-  background: repeating-linear-gradient(
-    45deg,
-    var(--color-placeholder-a) 0 0.5625rem,
-    var(--color-placeholder-b) 0.5625rem 1.125rem
-  );
 }
 
 @layer base {
@@ -198,21 +203,20 @@
   }
 }
 
-.swiper-button-prev,
+.swiper-button-prev {
+  @apply rounded-full border transition-colors duration-200;
+
+  &::after {
+    @apply size-2 border-r-2 border-b-2 content-[''] -mr-0.5 rotate-135;
+  }
+}
+
 .swiper-button-next {
   @apply rounded-full border transition-colors duration-200;
 
   &::after {
-    @apply size-2 border-r-2 border-b-2 content-[''];
+    @apply size-2 border-r-2 border-b-2 content-[''] -ml-0.5 -rotate-45;
   }
-}
-
-.swiper-button-prev::after {
-  @apply -mr-0.5 rotate-135;
-}
-
-.swiper-button-next::after {
-  @apply -ml-0.5 -rotate-45;
 }
 
 .swiper-gallery {
