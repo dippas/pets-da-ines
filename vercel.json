@@ -3,8 +3,6 @@
   "outputDirectory": "build/client",
   "installCommand": "bun install",
   "git": {
-    "deploymentEnabled": {
-      "main": false
-    }
+    "deploymentEnabled": false
   }
 }
