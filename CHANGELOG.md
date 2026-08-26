@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.4](https://github.com/dippas/pets-da-ines/compare/v1.0.3...v1.0.4) (2026-08-26)
+
+### Bug Fixes
+
+* crop photos from top ([#5](https://github.com/dippas/pets-da-ines/issues/5)) ([893e3d0](https://github.com/dippas/pets-da-ines/commit/893e3d09d9a5e6fccba734520b79efcaf6d63109))
+
 ## [1.0.3](https://github.com/dippas/pets-da-ines/compare/v1.0.2...v1.0.3) (2026-08-26)
 
 ### Bug Fixes
