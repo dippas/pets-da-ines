@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.3](https://github.com/dippas/pets-da-ines/compare/v1.0.2...v1.0.3) (2026-08-26)
+
+### Bug Fixes
+
+* use PAT in release workflow to satisfy branch protection bypass ([#4](https://github.com/dippas/pets-da-ines/issues/4)) ([e4e5e4f](https://github.com/dippas/pets-da-ines/commit/e4e5e4f9cc6ea50163a72669f779d5bd07406c26))
+
+### Continuous Integration
+
+* manual-only deploy trigger, add PR checks workflow ([#3](https://github.com/dippas/pets-da-ines/issues/3)) ([9ce0c9c](https://github.com/dippas/pets-da-ines/commit/9ce0c9cd42072c68a66f4c1b92acfa4f99d1c49d))
+
 ## [1.0.2](https://github.com/dippas/pets-da-ines/compare/v1.0.1...v1.0.2) (2026-08-26)
 
 ### Chores
