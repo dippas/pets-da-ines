@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1](https://github.com/dippas/pets-da-ines/compare/v1.0.0...v1.0.1) (2026-08-26)
+
+### Chores
+
+* require conventional-commit branch names on PRs ([#1](https://github.com/dippas/pets-da-ines/issues/1)) ([af94077](https://github.com/dippas/pets-da-ines/commit/af94077e8d243076ecaf8ac3a9857bf5ad7788fa))
+
 ## 1.0.0 (2026-08-26)
 
 ### Features
