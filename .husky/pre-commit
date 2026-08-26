@@ -1,1 +1,10 @@
+branch=$(git symbolic-ref --short HEAD)
+case "$branch" in
+  main|feat/*|fix/*|chore/*|docs/*|style/*|refactor/*|perf/*|test/*|build/*|ci/*) ;;
+  *)
+    echo "Branch name '$branch' must be main or start with a conventional-commit type, e.g. feat/add-map"
+    exit 1
+    ;;
+esac
+
 bunx lint-staged
