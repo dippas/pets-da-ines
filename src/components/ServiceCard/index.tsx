@@ -23,7 +23,7 @@ export default function ServiceCard({
       <Img
         src={photo}
         alt=""
-        className="h-service-card w-full object-cover sm:w-2/5 sm:shrink-0 lg:w-full"
+        className="h-service-card w-full object-cover object-top sm:w-2/5 sm:shrink-0 lg:w-full"
       />
       <div className="flex flex-1 flex-col gap-3 p-6">
         <h3 className="text-3xl leading-tight font-bold text-ink">{title}</h3>
