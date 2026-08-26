@@ -64,7 +64,7 @@ export default function ServicesHub() {
         <Img
           src={petBoardingPhoto}
           alt=""
-          className="h-service-detail w-full rounded-3xl object-cover"
+          className="h-service-detail w-full rounded-3xl object-cover object-top"
         />
       </section>
 
@@ -73,7 +73,7 @@ export default function ServicesHub() {
           <Img
             src={petSittingPhoto}
             alt=""
-            className="h-service-detail w-full order-2 rounded-3xl object-cover lg:order-0"
+            className="h-service-detail w-full order-2 rounded-3xl object-cover object-top lg:order-0"
           />
           <div className="max-w-measure-lg lg:max-w-none">
             <Label className="mb-3 block text-gold-dark">02</Label>
@@ -117,7 +117,7 @@ export default function ServicesHub() {
         <Img
           src={dogWalkingPhoto}
           alt=""
-          className="h-service-detail w-full rounded-3xl object-cover"
+          className="h-service-detail w-full rounded-3xl object-cover object-top"
         />
       </section>
 
@@ -155,7 +155,7 @@ export default function ServicesHub() {
                     key={index}
                     src={dogWalkingPool[index]}
                     alt=""
-                    className="w-full rounded-2xl object-cover"
+                    className="w-full rounded-2xl object-cover object-top"
                   />
                 ))}
               </div>
