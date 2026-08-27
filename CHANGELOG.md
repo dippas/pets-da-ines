@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.6](https://github.com/dippas/pets-da-ines/compare/v1.0.5...v1.0.6) (2026-08-27)
+
+### Bug Fixes
+
+* move high season dates above first table ([#7](https://github.com/dippas/pets-da-ines/issues/7)) ([afdf6a8](https://github.com/dippas/pets-da-ines/commit/afdf6a8fdc351bc8f4d9df78a289a3c0797bb6cc))
+
 ## [1.0.5](https://github.com/dippas/pets-da-ines/compare/v1.0.4...v1.0.5) (2026-08-26)
 
 ### Bug Fixes
