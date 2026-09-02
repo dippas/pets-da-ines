@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1](https://github.com/dippas/pets-da-ines/compare/v1.1.0...v1.1.1) (2026-09-02)
+
+### Chores
+
+* add security headers ([#9](https://github.com/dippas/pets-da-ines/issues/9)) ([863d522](https://github.com/dippas/pets-da-ines/commit/863d5221dab92852325ce8fe70e5fd53183a14fc))
+
 ## [1.1.0](https://github.com/dippas/pets-da-ines/compare/v1.0.6...v1.1.0) (2026-09-02)
 
 ### Features
