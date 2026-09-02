@@ -3,8 +3,7 @@ import { useLocale } from '../../hooks/useLocale'
 import { PAGE_PATHS, type PageKey } from '../../routes/paths'
 
 export const SITE_NAME = 'Os Pets da Inês'
-// TODO: fill in once the production domain is known — enables canonical/hreflang links and an absolute og:image.
-export const DOMAIN = ''
+export const DOMAIN = 'https://ospetsdaines.com'
 
 const LOCAL_BUSINESS_LD = {
   '@context': 'https://schema.org',

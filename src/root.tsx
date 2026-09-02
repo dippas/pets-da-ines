@@ -3,6 +3,7 @@ import karlaRegular from '@fontsource/karla/files/karla-latin-400-normal.woff2?u
 import karlaMedium from '@fontsource/karla/files/karla-latin-500-normal.woff2?url'
 import karlaSemibold from '@fontsource/karla/files/karla-latin-600-normal.woff2?url'
 import karlaBold from '@fontsource/karla/files/karla-latin-700-normal.woff2?url'
+import { Analytics } from '@vercel/analytics/react'
 import type { ReactNode } from 'react'
 import {
   Links,
@@ -71,6 +72,7 @@ export default function Root() {
       <PageMeta page={page} />
       <Outlet />
       <CookieBanner />
+      <Analytics />
     </IntlProvider>
   )
 }
