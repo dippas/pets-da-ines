@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.0](https://github.com/dippas/pets-da-ines/compare/v1.0.6...v1.1.0) (2026-09-02)
+
+### Features
+
+* wire up production domain, add Vercel Analytics ([#8](https://github.com/dippas/pets-da-ines/issues/8)) ([15fff18](https://github.com/dippas/pets-da-ines/commit/15fff18f4c6bea06713337f1cab1ffc49a4462de))
+
 ## [1.0.6](https://github.com/dippas/pets-da-ines/compare/v1.0.5...v1.0.6) (2026-08-27)
 
 ### Bug Fixes
