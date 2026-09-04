@@ -63,8 +63,8 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
   return (
     <div className="mb-16 grid gap-8 lg:grid-cols-2 lg:items-start">
       <div className="rounded-4xl border border-ink-subtle bg-white p-6 sm:p-10">
-        <div className="mb-6">
-          <Label className="mb-3 text-ink-muted">
+        <fieldset className="mb-6">
+          <Label as="legend" className="mb-3 text-ink-muted">
             {t('pricing.calculator.service')}
           </Label>
           <div className="flex flex-wrap gap-3">
@@ -93,11 +93,11 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
               {t('services.dogWalking.title')}
             </Button>
           </div>
-        </div>
+        </fieldset>
 
         <div className="mb-8 flex flex-wrap gap-6">
-          <div>
-            <Label className="mb-2 text-ink-muted">
+          <fieldset>
+            <Label as="legend" className="mb-2 text-ink-muted">
               {t('pricing.calculator.season')}
             </Label>
             <div className="flex flex-wrap gap-2">
@@ -126,10 +126,10 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
                 {t('pricing.seasonHigh')}
               </Button>
             </div>
-          </div>
+          </fieldset>
           {isBoarding && (
-            <div>
-              <Label className="mb-2 text-ink-muted">
+            <fieldset>
+              <Label as="legend" className="mb-2 text-ink-muted">
                 {t('pricing.calculator.stay')}
               </Label>
               <div className="flex flex-wrap gap-2">
@@ -158,7 +158,7 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
                   {t('pricing.calculator.stayHalf')}
                 </Button>
               </div>
-            </div>
+            </fieldset>
           )}
         </div>
         <div className="mb-8">
@@ -211,7 +211,10 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
         </div>
       </div>
 
-      <div className="rounded-4xl bg-navy p-6 text-cream sm:sticky sm:top-24 sm:p-10">
+      <div
+        aria-live="polite"
+        className="rounded-4xl bg-navy p-6 text-cream sm:sticky sm:top-24 sm:p-10"
+      >
         <Label className="mb-6 text-gold">
           {t(`pricing.calculator.${unitTitleKey}`)}
         </Label>
