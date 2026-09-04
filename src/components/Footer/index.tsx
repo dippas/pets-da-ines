@@ -1,4 +1,5 @@
 import { useTranslations } from 'use-intl'
+import Img from '../Img'
 import Label from '../Label'
 
 const ADDRESS_LINE1 = 'Rua Teófilo Braga, nº 6'
@@ -15,9 +16,9 @@ export default function Footer() {
     <footer className="mt-auto bg-charcoal text-off-white-secondary">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-8 md:grid-cols-3 lg:grid-cols-4">
         <div className="md:col-span-3 lg:col-span-1">
-          <img
+          <Img
             src="/site/logo.webp"
-            alt=""
+            alt={t('common.brand.name')}
             width={200}
             height={200}
             loading="lazy"
