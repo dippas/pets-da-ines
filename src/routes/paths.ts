@@ -15,24 +15,24 @@ export function pagePath(page: PageKey, locale: SupportedLanguage): string {
   return PAGE_PATHS[page][locale]
 }
 
-export function pageForPath(pathname: string): PageKey {
+export function pageForPath(pathname: string): PageKey | null {
   const path = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname
 
-  for (const [page, paths] of Object.entries(PAGE_PATHS)) {
-    if (path === paths.pt || path === paths.en) {
+  for (const [page, { pt, en }] of Object.entries(PAGE_PATHS)) {
+    if (path === pt || path === en) {
       return page as PageKey
     }
   }
-  return 'home'
+  return null
 }
 
 export function switchLocalePath(pathname: string): string {
-  for (const paths of Object.values(PAGE_PATHS)) {
-    if (pathname === paths.pt) {
-      return paths.en
+  for (const { pt, en } of Object.values(PAGE_PATHS)) {
+    if (pathname === pt) {
+      return en
     }
-    if (pathname === paths.en) {
-      return paths.pt
+    if (pathname === en) {
+      return pt
     }
   }
   return pathname.startsWith('/en')

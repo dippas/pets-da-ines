@@ -16,7 +16,11 @@ const pillClass = ({ isActive }: { isActive: boolean }) =>
       : 'text-ink hover:bg-lavender hover:text-indigo',
   )
 
-export default function Nav() {
+interface NavProps {
+  hideLinks?: boolean
+}
+
+export default function Nav({ hideLinks = false }: NavProps) {
   const t = useTranslations()
   const locale = useLocale()
   const [open, setOpen] = useState(false)
@@ -40,7 +44,10 @@ export default function Nav() {
   return (
     <nav
       onKeyDown={closeOnEscape}
-      className="sticky top-0 z-20 border-b border-ink-subtle bg-cream"
+      className={cn(
+        'sticky top-0 z-20 border-b border-ink-subtle bg-cream',
+        hideLinks && 'hidden',
+      )}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:px-8 lg:hidden">
         <Button
@@ -62,7 +69,7 @@ export default function Nav() {
         </Button>
       </div>
 
-      {open && (
+      {open && !hideLinks && (
         <div
           id="mobile-menu"
           className="absolute inset-x-0 top-full flex flex-col border-t border-ink-subtle bg-cream px-4 pb-4 shadow-lg sm:px-8 lg:hidden"
