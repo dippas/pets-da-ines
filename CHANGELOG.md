@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.1](https://github.com/dippas/pets-da-ines/compare/v1.3.0...v1.3.1) (2026-09-04)
+
+### Refactoring
+
+* extract Header component, use Img wrapper everywhere ([#12](https://github.com/dippas/pets-da-ines/issues/12)) ([97f0080](https://github.com/dippas/pets-da-ines/commit/97f008057a0c48a8520282b6f5665b1c1fb1fab9))
+
 ## [1.3.0](https://github.com/dippas/pets-da-ines/compare/v1.2.0...v1.3.0) (2026-09-04)
 
 ### Features
