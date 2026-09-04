@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.0](https://github.com/dippas/pets-da-ines/compare/v1.2.0...v1.3.0) (2026-09-04)
+
+### Features
+
+* custom 404 and 500 error pages ([#11](https://github.com/dippas/pets-da-ines/issues/11)) ([262903f](https://github.com/dippas/pets-da-ines/commit/262903fd7cfd343cbe03239e678515b356ef435d))
+
 ## [1.2.0](https://github.com/dippas/pets-da-ines/compare/v1.1.1...v1.2.0) (2026-09-04)
 
 ### Features
