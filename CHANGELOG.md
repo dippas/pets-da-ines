@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0](https://github.com/dippas/pets-da-ines/compare/v1.1.1...v1.2.0) (2026-09-04)
+
+### Features
+
+* SEO, AEO and accessibility improvements ([#10](https://github.com/dippas/pets-da-ines/issues/10)) ([c0d7bc8](https://github.com/dippas/pets-da-ines/commit/c0d7bc826b746e30b5bfd30dca669be6efe91c78))
+
 ## [1.1.1](https://github.com/dippas/pets-da-ines/compare/v1.1.0...v1.1.1) (2026-09-02)
 
 ### Chores
