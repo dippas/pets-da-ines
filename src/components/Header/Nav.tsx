@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type KeyboardEvent, useRef, useState } from 'react'
 import { NavLink } from 'react-router'
 import { useTranslations } from 'use-intl'
 import { useLocale } from '../../hooks/useLocale'
@@ -20,6 +20,14 @@ export default function Nav() {
   const t = useTranslations()
   const locale = useLocale()
   const [open, setOpen] = useState(false)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+
+  function closeOnEscape(event: KeyboardEvent<HTMLElement>) {
+    if (event.key === 'Escape' && open) {
+      setOpen(false)
+      toggleRef.current?.focus()
+    }
+  }
 
   const links = [
     { to: pagePath('about', locale), label: t('common.nav.about') },
@@ -30,13 +38,18 @@ export default function Nav() {
   ]
 
   return (
-    <nav className="sticky top-0 z-20 border-b border-ink-subtle bg-cream">
+    <nav
+      onKeyDown={closeOnEscape}
+      className="sticky top-0 z-20 border-b border-ink-subtle bg-cream"
+    >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:px-8 lg:hidden">
         <Button
+          ref={toggleRef}
           variant="bare"
           onClick={() => setOpen((isOpen) => !isOpen)}
           ariaLabel={t('common.nav.menu')}
           ariaExpanded={open}
+          ariaControls="mobile-menu"
           className="flex size-11 flex-col items-center justify-center gap-1"
         >
           <span
@@ -50,7 +63,10 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="absolute inset-x-0 top-full flex flex-col border-t border-ink-subtle bg-cream px-4 pb-4 shadow-lg sm:px-8 lg:hidden">
+        <div
+          id="mobile-menu"
+          className="absolute inset-x-0 top-full flex flex-col border-t border-ink-subtle bg-cream px-4 pb-4 shadow-lg sm:px-8 lg:hidden"
+        >
           {links.map((link) => (
             <NavLink
               key={link.to}

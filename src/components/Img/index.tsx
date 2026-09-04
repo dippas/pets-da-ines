@@ -1,6 +1,8 @@
 interface ImgProps {
   src: string
   alt: string
+  width?: number
+  height?: number
   className?: string
   loading?: 'lazy' | 'eager'
   decoding?: 'sync' | 'async' | 'auto'
@@ -10,6 +12,8 @@ interface ImgProps {
 export default function Img({
   src,
   alt,
+  width,
+  height,
   className,
   loading = 'lazy',
   decoding = 'async',
@@ -19,6 +23,8 @@ export default function Img({
     <img
       src={src}
       alt={alt}
+      width={width}
+      height={height}
       className={className}
       loading={loading}
       decoding={decoding}

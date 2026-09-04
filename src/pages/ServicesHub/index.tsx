@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { CSSProperties } from 'react'
-import { Navigation } from 'swiper/modules'
+import { A11y, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useTranslations } from 'use-intl'
 import Button from '../../components/Button'
@@ -13,11 +13,13 @@ import { pagePath } from '../../routes/paths'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
+const GALLERY_HEIGHTS = [1365, 1024, 1024, 1365, 1024, 1365, 1024, 1024]
+
 const GALLERY_COLUMNS = [
   [0, 1],
-  [2, 3, 4],
-  [5, 6],
-  [7, 8],
+  [2, 3],
+  [4, 5],
+  [6, 7],
 ]
 
 export default function ServicesHub() {
@@ -31,6 +33,9 @@ export default function ServicesHub() {
   const petSittingPhoto = useServicePhoto('pet-sitting', 'detail:pet-sitting')
   const dogWalkingPhoto = useServicePhoto('dog-walking', 'detail:dog-walking')
   const dogWalkingPool = servicePhotoPool('dog-walking')
+  const dogWalkingGalleryAlt = t.raw(
+    'services.dogWalking.galleryAlt',
+  ) as string[]
 
   return (
     <>
@@ -61,7 +66,7 @@ export default function ServicesHub() {
         </div>
         <Img
           src={petBoardingPhoto}
-          alt=""
+          alt={t('services.petBoarding.photoAlt')}
           className="h-service-detail w-full rounded-3xl object-cover"
         />
       </section>
@@ -70,7 +75,7 @@ export default function ServicesHub() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16">
           <Img
             src={petSittingPhoto}
-            alt=""
+            alt={t('services.petSitting.photoAlt')}
             className="h-service-detail w-full order-2 rounded-3xl object-cover lg:order-0"
           />
           <div className="max-w-measure-lg lg:max-w-none">
@@ -112,7 +117,7 @@ export default function ServicesHub() {
         </div>
         <Img
           src={dogWalkingPhoto}
-          alt=""
+          alt={t('services.dogWalking.photoAlt')}
           className="h-service-detail w-full rounded-3xl object-cover"
         />
       </section>
@@ -122,42 +127,69 @@ export default function ServicesHub() {
           className="pointer-events-none absolute -top-20 -left-15 size-70 -rotate-6 opacity-15"
           color="var(--color-off-white)"
         />
-        <div className="relative mx-auto max-w-6xl px-4 pb-8 sm:px-8">
-          <Label tracking="eyebrow" className="mb-3 text-gold">
-            {t('services.dogWalking.galleryEyebrow')}
-          </Label>
-          <h2 className="text-3xl font-bold text-off-white sm:text-5xl">
-            {t('services.dogWalking.galleryHeading')}
-          </h2>
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-8">
+          <div className="mb-10">
+            <Label tracking="eyebrow" className="mb-3 text-gold">
+              {t('services.dogWalking.galleryEyebrow')}
+            </Label>
+            <h2 className="text-3xl font-bold text-off-white sm:text-5xl">
+              {t('services.dogWalking.galleryHeading')}
+            </h2>
+          </div>
+          <div
+            className="swiper-nav-light relative"
+            style={
+              {
+                '--swiper-navigation-color': 'var(--color-indigo)',
+              } as CSSProperties
+            }
+          >
+            <div className="carousel-heading-nav">
+              <button
+                type="button"
+                className="carousel-nav-prev swiper-button-prev"
+                aria-label={t('common.carousel.previous')}
+              />
+              <button
+                type="button"
+                className="carousel-nav-next swiper-button-next"
+                aria-label={t('common.carousel.next')}
+              />
+            </div>
+            <Swiper
+              modules={[Navigation, A11y]}
+              navigation={{
+                prevEl: '.carousel-nav-prev',
+                nextEl: '.carousel-nav-next',
+                addIcons: false,
+              }}
+              spaceBetween={12}
+              slidesPerView={2.15}
+              breakpoints={{ 768: { slidesPerView: 4 } }}
+              a11y={{
+                prevSlideMessage: t('common.carousel.previous'),
+                nextSlideMessage: t('common.carousel.next'),
+              }}
+            >
+              {GALLERY_COLUMNS.map((column) => (
+                <SwiperSlide key={column[0]}>
+                  <div className="flex flex-col gap-3">
+                    {column.map((index) => (
+                      <Img
+                        key={index}
+                        src={dogWalkingPool[index]}
+                        alt={dogWalkingGalleryAlt[index]}
+                        width={768}
+                        height={GALLERY_HEIGHTS[index]}
+                        className="aspect-3/4 w-full rounded-2xl object-cover sm:aspect-auto"
+                      />
+                    ))}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
-        <Swiper
-          modules={[Navigation]}
-          navigation={{ addIcons: false }}
-          spaceBetween={12}
-          slidesPerView={2}
-          breakpoints={{ 768: { slidesPerView: 4 } }}
-          style={
-            {
-              '--swiper-navigation-color': 'var(--color-off-white)',
-            } as CSSProperties
-          }
-          className="swiper-nav-dark swiper-gallery relative mx-auto max-w-6xl"
-        >
-          {GALLERY_COLUMNS.map((column) => (
-            <SwiperSlide key={column[0]}>
-              <div className="flex flex-col gap-3">
-                {column.map((index) => (
-                  <Img
-                    key={index}
-                    src={dogWalkingPool[index]}
-                    alt=""
-                    className="w-full rounded-2xl object-cover"
-                  />
-                ))}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
       </section>
     </>
   )

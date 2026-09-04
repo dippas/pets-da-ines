@@ -28,7 +28,9 @@ export default function Home() {
         <div className="relative">
           <Img
             src="/site/hero.webp"
-            alt=""
+            alt={t('home.heroAlt')}
+            width={768}
+            height={1024}
             loading="eager"
             fetchPriority="high"
             className="h-hero-compact block w-full object-cover"
@@ -79,7 +81,9 @@ export default function Home() {
           <PawBlob className="absolute -top-4.5 -right-4.5 size-47.5 rotate-12 opacity-40" />
           <Img
             src="/site/hero.webp"
-            alt=""
+            alt={t('home.heroAlt')}
+            width={768}
+            height={1024}
             loading="eager"
             fetchPriority="high"
             className="h-hero-wide relative w-full rounded-blob-lg object-cover shadow-2xl"

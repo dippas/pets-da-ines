@@ -68,7 +68,7 @@
 }
 
 @utility text-ink-muted {
-  @apply text-ink/45;
+  @apply text-ink/65;
 }
 
 @utility border-ink-strong {
@@ -219,14 +219,6 @@
   }
 }
 
-.swiper-gallery {
-  @apply px-4;
-
-  @variant sm {
-    @apply px-8;
-  }
-}
-
 .swiper-nav-light .swiper-slide {
   @apply h-auto;
 }
@@ -242,9 +234,4 @@
   .swiper-button-next {
     @apply static mt-0 border-ink-subtle bg-white hover:border-indigo;
   }
-}
-
-.swiper-nav-dark .swiper-button-prev,
-.swiper-nav-dark .swiper-button-next {
-  @apply border-off-white-subtle bg-transparent hover:border-gold;
 }

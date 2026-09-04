@@ -5,6 +5,7 @@ type LabelTracking = 'eyebrow' | 'widest' | 'label' | 'badge'
 
 interface LabelProps {
   as?: ElementType
+  id?: string
   tracking?: LabelTracking
   children: ReactNode
   className?: string
@@ -19,11 +20,14 @@ const trackingClass: Record<LabelTracking, string> = {
 
 export default function Label({
   as: Tag = 'span',
+  id,
   tracking = 'widest',
   children,
   className,
 }: LabelProps) {
   return (
-    <Tag className={cn(trackingClass[tracking], className)}>{children}</Tag>
+    <Tag id={id} className={cn(trackingClass[tracking], className)}>
+      {children}
+    </Tag>
   )
 }

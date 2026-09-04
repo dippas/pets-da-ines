@@ -22,7 +22,7 @@ export default function ServiceCard({
     <article className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-lg transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-2xl sm:flex-row lg:flex-col">
       <Img
         src={photo}
-        alt=""
+        alt={t(`services.${service.translationKey}.photoAlt`)}
         className="aspect-square w-full object-cover sm:w-2/5 sm:shrink-0 lg:w-full"
       />
       <div className="flex flex-1 flex-col gap-3 p-6">

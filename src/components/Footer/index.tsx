@@ -18,6 +18,8 @@ export default function Footer() {
           <img
             src="/site/logo.webp"
             alt=""
+            width={200}
+            height={200}
             loading="lazy"
             decoding="async"
             className="mb-4 size-16 rounded-full object-cover"

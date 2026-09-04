@@ -16,7 +16,9 @@ export default function About() {
           />
           <Img
             src="/site/about.webp"
-            alt=""
+            alt={t('about.photoAlt')}
+            width={768}
+            height={1029}
             loading="eager"
             fetchPriority="high"
             className="h-about-photo relative w-full rounded-3xl object-cover shadow-xl sm:rounded-blob"

@@ -15,7 +15,10 @@ function LanguageOption({
 
   if (locale === language) {
     return (
-      <span className="border-b-2 border-indigo pb-0.5 text-ink">
+      <span
+        aria-current="true"
+        className="border-b-2 border-indigo pb-0.5 text-ink"
+      >
         {t(`common.language.${language}`)}
       </span>
     )

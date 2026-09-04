@@ -55,7 +55,9 @@
       "complaintsBook": "Livro de Reclamações"
     },
     "carousel": { "previous": "Anterior", "next": "Seguinte" },
+    "skipToContent": "Saltar para o conteúdo principal",
     "cookieBanner": {
+      "label": "Consentimento de cookies",
       "text": "Utilizamos cookies para melhorar a sua experiência neste site. Pode aceitar ou recusar.",
       "accept": "Aceitar",
       "decline": "Recusar",
@@ -67,6 +69,7 @@
     "heading": "Olá! Sou a Inês, e cuido do seu animal como se fosse meu.",
     "body1": "\"Os Pets da Inês\" nasceu a 17 de Novembro de 2024 com um propósito muito claro: oferecer cuidados dedicados, personalizados e com amor aos animais de estimação.",
     "body2": "Sou eu que cuido pessoalmente de cada animal, assegurando o seu bem-estar e segurança e enviando sempre atualizações aos tutores para que não se preocupem.",
+    "heroAlt": "Inês sorridente, agachada, a passear quatro cães de trela num caminho ao ar livre",
     "services": {
       "eyebrow": "Os nossos serviços",
       "heading": "Três formas de cuidar do seu animal"
@@ -102,7 +105,8 @@
     "body1": "Olá! O meu nome é Inês, tenho 27 anos e sou apaixonada por animais desde que me lembro.",
     "body2": "Cresci rodeada por cães e gatos, e essa convivência tornou-se uma parte essencial da minha vida. Ao longo dos anos, cuidei de animais de todas as idades, tamanhos e personalidades — tanto de amigos e familiares quanto de clientes — e cada experiência reforçou o meu amor por eles.",
     "body3": "Acredito que cada animal é único e merece toda a atenção e carinho, especialmente quando os seus donos não estão por perto.",
-    "body4": "Sou uma pessoa atenta, paciente e de confiança, e faço questão de adaptar-me às necessidades específicas de cada animal. Além disso, tenho experiência com cães e gatos de várias raças e personalidades, o que me permite compreender e respeitar as suas particularidades."
+    "body4": "Sou uma pessoa atenta, paciente e de confiança, e faço questão de adaptar-me às necessidades específicas de cada animal. Além disso, tenho experiência com cães e gatos de várias raças e personalidades, o que me permite compreender e respeitar as suas particularidades.",
+    "photoAlt": "Inês sorridente, junto de um cão com peitoral, numa rua com prédios ao fundo"
   },
   "services": {
     "hub": {
@@ -114,22 +118,36 @@
       "title": "Pet Boarding",
       "cardText": "O seu animal fica alojado em ambiente familiar, com atenção personalizada, muita brincadeira e carinho.",
       "detail1": "Vais viajar em trabalho ou tirar alguns dias de férias e preocupas-te com o bem-estar do teu animal de estimação? Deixa-me ajudar-te a garantir que o teu patudo receba todos os cuidados que merece enquanto estiveres fora!",
-      "detail2": "Com o Pet Boarding, o teu animal de estimação vai desfrutar de um ambiente familiar, atenção personalizada, muita brincadeira e carinho na casa do pet-sitter."
+      "detail2": "Com o Pet Boarding, o teu animal de estimação vai desfrutar de um ambiente familiar, atenção personalizada, muita brincadeira e carinho na casa do pet-sitter.",
+      "photoAlt": "Cães a descansar juntos numa cama, durante o alojamento (pet boarding)"
     },
     "petSitting": {
       "title": "Pet Sitting",
       "cardText": "Visito o seu animal em casa: alimentação, água fresca, brincadeiras e companhia, sem quebrar a rotina.",
       "detail1": "Visito o seu animal na sua própria casa, garantindo alimentação, água fresca, brincadeiras e companhia, mantendo a rotina habitual sem stress para o animal.",
       "detail2": "Recebe fotos, vídeos e o ponto de situação de cada visita.",
-      "detail3": "Também faço pet sitting de gatos, com a tarifa de 1 cão qualquer que seja o número de gatos."
+      "detail3": "Também faço pet sitting de gatos, com a tarifa de 1 cão qualquer que seja o número de gatos.",
+      "photoAlt": "Gatos de estimação em casa, durante uma visita de pet sitting"
     },
     "dogWalking": {
       "title": "Dog Walking",
       "cardText": "Passeios adaptados às necessidades do seu cão e ajustados ao seu horário. Cães felizes e saudáveis.",
       "detail1": "Trabalhas o dia todo fora de casa, ficaste doente ou não tens tempo para passear o teu cão? Deixa-me ajudar-te a proporcionar os passeios que o teu companheiro peludo merece!",
       "detail2": "Os passeios são adaptados às necessidades do teu cão e ajustados ao teu horário, garantindo que o teu cão receba toda a atenção necessária.",
+      "photoAlt": "Cão ao ar livre, durante um passeio (dog walking)",
       "galleryEyebrow": "Galeria · Dog Walking",
-      "galleryHeading": "Companheiros dos passeios"
+      "galleryHeading": "Companheiros dos passeios",
+      "galleryAlt": [
+        "Cão pequeno de pelo branco, com peitoral vermelho, sentado num caminho de terra",
+        "Yorkshire terrier com lenço ao pescoço, a sorrir no meio de margaridas",
+        "Cão a dar a pata a uma pessoa num parque, com trela",
+        "Golden retriever deitado na relva com um pau, num parque",
+        "Dois cães peludos, lado a lado, num deque de madeira ao ar livre",
+        "Labrador cor de mel deitado no chão, com peitoral, a olhar para cima",
+        "Cão branco e castanho sentado num campo com flores amarelas, com trela",
+        "Spitz-alemão a correr na relva",
+        "Labrador com peitoral laranja, sentado num quintal"
+      ]
     }
   },
   "pricing": {
@@ -204,27 +222,27 @@
     "intro": "Como funciona, do primeiro contacto ao regresso a casa.",
     "steps": [
       {
-        "title": "Avaliação inicial gratuita",
+        "title": "Como funciona a avaliação inicial?",
         "body": "Marcamos um encontro sem compromisso para conhecer o seu animal, as suas rotinas e perceber que serviço faz mais sentido."
       },
       {
-        "title": "Marcações",
+        "title": "Como funcionam as marcações e o sinal de reserva?",
         "body": "As marcações só se consideram concluídas mediante pagamento de um Sinal de Reserva de 50%."
       },
       {
-        "title": "Políticas de cancelamento",
+        "title": "Qual é a política de cancelamento?",
         "body": ""
       },
       {
-        "title": "Dia de teste",
+        "title": "O que é o dia de teste e quando se aplica?",
         "body": "Todos os cães novos devem realizar obrigatoriamente o Dia de Teste. Caso seja identificada ansiedade grave ou necessidade de supervisão contínua, será aplicada uma taxa de cuidado individualizado de +5€ por dia. Caso se identifique reatividade a outros animais ou necessite de um ambiente de exclusividade total (sem possibilidade de integração ou estadia com os restantes hóspedes), a reserva poderá ser aceite. No entanto, devido à logística de separação exigida a essa estadia será aplicada uma tarifa correspondente ao valor de ocupação de 2 cães."
       },
       {
-        "title": "Gestão de horários",
+        "title": "Qual o horário de funcionamento e as taxas fora de horas?",
         "body": "Horário oficial das 08:00 às 20:00. Taxa Fora de Horas de 5€ por cada hora ou fração. A partir das 22:00, as portas fecham obrigatoriamente e o animal passa a noite (fatura-se uma diária completa adicional no dia seguinte)."
       },
       {
-        "title": "Durante a estadia",
+        "title": "O que recebo durante a estadia do meu animal?",
         "body": "Recebe fotos, vídeos e o ponto de situação todos os dias, para não ter de se preocupar."
       }
     ],
@@ -255,6 +273,7 @@
     "emailLabel": "Email",
     "instagramLabel": "Instagram · dia a dia",
     "whereLabel": "Onde estou",
-    "hoursNote": "Segunda a domingo, 08:00 – 20:00. Fora deste horário aplica-se a taxa de 5€ por hora ou fração."
+    "hoursNote": "Segunda a domingo, 08:00 – 20:00. Fora deste horário aplica-se a taxa de 5€ por hora ou fração.",
+    "mapTitle": "Mapa com a localização de Os Pets da Inês"
   }
 }
