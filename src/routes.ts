@@ -16,6 +16,7 @@ export default [
       id: 'pt-booking',
     }),
     route('contactos', 'pages/Contacts/index.tsx', { id: 'pt-contact' }),
+    route('*', 'pages/NotFound/index.tsx', { id: 'pt-not-found' }),
   ]),
   ...prefix('en', [
     layout('routes/SiteLayout.tsx', { id: 'en-layout' }, [
@@ -27,6 +28,7 @@ export default [
         id: 'en-booking',
       }),
       route('contact', 'pages/Contacts/index.tsx', { id: 'en-contact' }),
+      route('*', 'pages/NotFound/index.tsx', { id: 'en-not-found' }),
     ]),
   ]),
 ] satisfies RouteConfig

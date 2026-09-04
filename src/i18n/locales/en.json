@@ -20,6 +20,12 @@
       "title": "Booking Conditions | Os Pets da Inês",
       "description": "How bookings, deposits, cancellations and scheduling work for pet sitting services in Barcarena."
     },
+    "notFound": {
+      "title": "Page Not Found | Os Pets da Inês"
+    },
+    "serverError": {
+      "title": "Something Went Wrong | Os Pets da Inês"
+    },
     "contact": {
       "title": "Contact | Os Pets da Inês",
       "description": "Reach Inês via WhatsApp, email or Instagram. Pet sitting services in Barcarena, Rua Teófilo Braga."
@@ -275,5 +281,18 @@
     "whereLabel": "Where I am",
     "hoursNote": "Monday to Sunday, 08:00 – 20:00. Outside these hours a 5€ per hour (or part thereof) fee applies.",
     "mapTitle": "Map showing the location of Os Pets da Inês"
+  },
+  "error": {
+    "notFound": {
+      "eyebrow": "404 Error",
+      "heading": "Page not found",
+      "body": "The page you're looking for doesn't exist or has been moved."
+    },
+    "serverError": {
+      "eyebrow": "Error",
+      "heading": "Something went wrong",
+      "body": "An unexpected error occurred. Try again or go back to the homepage."
+    },
+    "backHome": "Back to homepage"
   }
 }

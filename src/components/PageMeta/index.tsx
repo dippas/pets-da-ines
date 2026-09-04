@@ -16,7 +16,7 @@ interface CancellationBlock {
 }
 
 interface PageMetaProps {
-  page: PageKey
+  page: PageKey | null
 }
 
 type Translate = ReturnType<typeof useTranslations>
@@ -128,6 +128,16 @@ function buildFaqLd(t: Translate) {
 export default function PageMeta({ page }: PageMetaProps) {
   const t = useTranslations()
   const locale = useLocale()
+
+  if (page === null) {
+    return (
+      <>
+        <title>{t('meta.notFound.title')}</title>
+        <meta name="robots" content="noindex" />
+      </>
+    )
+  }
+
   const title = t(`meta.${page}.title`)
   const description = t(`meta.${page}.description`)
   const url = DOMAIN ? `${DOMAIN}${PAGE_PATHS[page][locale]}` : undefined

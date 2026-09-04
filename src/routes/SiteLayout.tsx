@@ -1,18 +1,19 @@
 import { Outlet } from 'react-router'
 import Footer from '../components/Footer'
-import LogoBand from '../components/Header/LogoBand'
+import Header from '../components/Header'
 import Nav from '../components/Header/Nav'
+import ServerErrorBoundary from '../components/ServerErrorBoundary'
 
 export default function SiteLayout() {
   return (
     <div className="flex min-h-svh flex-col">
-      <header>
-        <LogoBand />
-      </header>
-      <Nav />
-      <main className="flex-1">
-        <Outlet />
-      </main>
+      <Header />
+      <ServerErrorBoundary>
+        <Nav />
+        <main id="main-content" className="flex-1">
+          <Outlet />
+        </main>
+      </ServerErrorBoundary>
       <Footer />
     </div>
   )

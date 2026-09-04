@@ -20,6 +20,12 @@
       "title": "Condições de Reserva | Os Pets da Inês",
       "description": "Como funcionam as reservas, sinal, cancelamentos e horários dos serviços de pet sitting em Barcarena."
     },
+    "notFound": {
+      "title": "Página não encontrada | Os Pets da Inês"
+    },
+    "serverError": {
+      "title": "Ocorreu um erro | Os Pets da Inês"
+    },
     "contact": {
       "title": "Contactos | Os Pets da Inês",
       "description": "Fale com a Inês por WhatsApp, email ou Instagram. Serviços de pet sitting em Barcarena, Rua Teófilo Braga."
@@ -275,5 +281,18 @@
     "whereLabel": "Onde estou",
     "hoursNote": "Segunda a domingo, 08:00 – 20:00. Fora deste horário aplica-se a taxa de 5€ por hora ou fração.",
     "mapTitle": "Mapa com a localização de Os Pets da Inês"
+  },
+  "error": {
+    "notFound": {
+      "eyebrow": "Erro 404",
+      "heading": "Página não encontrada",
+      "body": "A página que procura não existe ou foi movida."
+    },
+    "serverError": {
+      "eyebrow": "Erro",
+      "heading": "Algo correu mal",
+      "body": "Ocorreu um erro inesperado. Tente novamente ou volte à página inicial."
+    },
+    "backHome": "Voltar à página inicial"
   }
 }
