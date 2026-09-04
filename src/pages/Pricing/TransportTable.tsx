@@ -12,17 +12,29 @@ export default function TransportTable() {
       <p className="mb-6 text-sm text-ink-muted">
         {t('pricing.transportIntro')}
       </p>
-      <div className="card overflow-x-auto">
+      <section
+        aria-label={t('pricing.transportHeading')}
+        className="card overflow-x-auto"
+      >
         <table className="w-full min-w-md border-collapse text-left">
           <thead>
             <tr className="bg-panel">
-              <th className="px-6 py-4 text-xs font-bold tracking-wider text-ink-muted uppercase">
+              <th
+                scope="col"
+                className="px-6 py-4 text-xs font-bold tracking-wider text-ink-muted uppercase"
+              >
                 {t('pricing.transportRange')}
               </th>
-              <th className="px-6 py-4 text-right font-heading text-lg font-semibold">
+              <th
+                scope="col"
+                className="px-6 py-4 text-right font-heading text-lg font-semibold"
+              >
                 {t('pricing.transportOne')}
               </th>
-              <th className="px-6 py-4 text-right font-heading text-lg font-semibold">
+              <th
+                scope="col"
+                className="px-6 py-4 text-right font-heading text-lg font-semibold"
+              >
                 {t('pricing.transportBoth')}
               </th>
             </tr>
@@ -43,7 +55,7 @@ export default function TransportTable() {
             ))}
           </tbody>
         </table>
-      </div>
+      </section>
     </div>
   )
 }

@@ -20,6 +20,10 @@ export default function CookieBanner() {
       enableDeclineButton
       expires={365}
       disableStyles
+      customContainerAttributes={{
+        role: 'region',
+        'aria-label': t('common.cookieBanner.label'),
+      }}
       buttonText={t('common.cookieBanner.accept')}
       declineButtonText={t('common.cookieBanner.decline')}
       ariaAcceptLabel={t('common.cookieBanner.accept')}

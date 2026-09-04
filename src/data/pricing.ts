@@ -45,6 +45,16 @@ export const TABLES: Record<TableKey, PriceBand[]> = {
   ],
 }
 
+export type PriceKind = 'boarding' | 'visit'
+
+export function priceRange(kind: PriceKind) {
+  const prices = Object.entries(TABLES)
+    .filter(([key]) => key.startsWith(kind))
+    .flatMap(([, bands]) => bands.flatMap(({ row }) => row))
+
+  return { min: Math.min(...prices), max: Math.max(...prices) }
+}
+
 export type TransportId = 'r0_3' | 'r3_7' | 'r7_12' | 'r12_20' | 'r20plus'
 
 export const TRANSPORT: TransportId[] = [
@@ -56,4 +66,7 @@ export const TRANSPORT: TransportId[] = [
 ]
 
 export const eur = (n: number, locale: 'pt' | 'en' = 'pt') =>
-  locale === 'en' ? n.toFixed(2) : n.toFixed(2).replace('.', ',')
+  new Intl.NumberFormat(locale === 'en' ? 'en-US' : 'pt-PT', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(n)

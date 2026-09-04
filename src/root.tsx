@@ -36,7 +36,9 @@ export function Layout({ children }: { children: ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <link rel="icon" type="image/png" href="/site/logo.png" />
+        <link rel="apple-touch-icon" href="/site/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#EDEFFC" />
         {criticalFonts.map((href) => (
           <link
             key={href}
@@ -50,6 +52,12 @@ export function Layout({ children }: { children: ReactNode }) {
         <Links />
       </head>
       <body>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-navy focus:px-6 focus:py-3 focus:text-sm focus:font-bold focus:text-cream"
+        >
+          {messages[locale].common.skipToContent}
+        </a>
         {children}
         <ScrollRestoration />
         <Scripts />

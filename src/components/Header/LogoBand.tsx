@@ -22,6 +22,8 @@ export default function LogoBand() {
           <img
             src="/site/logo.webp"
             alt={t('common.brand.name')}
+            width={200}
+            height={200}
             className="size-14 shrink-0 rounded-full border-2 border-white/85 object-cover shadow-md sm:size-18"
           />
           <span className="flex min-w-0 flex-col gap-1">

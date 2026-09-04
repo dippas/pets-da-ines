@@ -141,7 +141,7 @@ export default function Contacts() {
         </div>
         {mapConsent ? (
           <iframe
-            title="Mapa"
+            title={t('contact.mapTitle')}
             src={MAPS_EMBED_SRC}
             className="h-contact-map w-full rounded-3xl border-0"
           />

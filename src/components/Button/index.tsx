@@ -1,13 +1,15 @@
-import type { ReactNode } from 'react'
+import type { ReactNode, Ref } from 'react'
 import { Link } from 'react-router'
 import { cn } from '../../lib/cn'
 
 interface ButtonProps {
+  ref?: Ref<HTMLButtonElement>
   to?: string
   onClick?: () => void
   active?: boolean
   ariaLabel?: string
   ariaExpanded?: boolean
+  ariaControls?: string
   children: ReactNode
   variant?: 'solid' | 'outline' | 'link' | 'bare'
   className?: string
@@ -25,11 +27,13 @@ function isInternal(to: string) {
 }
 
 export default function Button({
+  ref,
   to,
   onClick,
   active,
   ariaLabel,
   ariaExpanded,
+  ariaControls,
   children,
   variant = 'solid',
   className: extraClassName,
@@ -39,11 +43,13 @@ export default function Button({
   if (onClick) {
     return (
       <button
+        ref={ref}
         type="button"
         onClick={onClick}
         aria-pressed={active}
         aria-label={ariaLabel}
         aria-expanded={ariaExpanded}
+        aria-controls={ariaControls}
         className={className}
       >
         {children}

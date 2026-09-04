@@ -55,7 +55,9 @@
       "complaintsBook": "Complaints Book"
     },
     "carousel": { "previous": "Previous", "next": "Next" },
+    "skipToContent": "Skip to main content",
     "cookieBanner": {
+      "label": "Cookie consent",
       "text": "We use cookies to improve your experience on this site. You can accept or decline.",
       "accept": "Accept",
       "decline": "Decline",
@@ -67,6 +69,7 @@
     "heading": "Hi! I'm Inês, and I care for your pet as if it were my own.",
     "body1": "\"Os Pets da Inês\" was born on 17 November 2024 with a very clear purpose: to offer dedicated, personalised care, given with love, to pets.",
     "body2": "I personally look after every animal myself, making sure they're safe and well, and I always send owners updates so they never have to worry.",
+    "heroAlt": "Inês smiling, crouched down, walking four dogs on leashes along an outdoor path",
     "services": {
       "eyebrow": "Our services",
       "heading": "Three ways to care for your pet"
@@ -102,7 +105,8 @@
     "body1": "Hi! My name is Inês, I'm 27 years old, and I've been passionate about animals for as long as I can remember.",
     "body2": "I grew up surrounded by dogs and cats, and that closeness became an essential part of my life. Over the years I've cared for animals of every age, size and personality — friends' and family's pets as well as clients' — and every experience deepened my love for them.",
     "body3": "I believe every animal is unique and deserves full attention and care, especially when their owners aren't around.",
-    "body4": "I'm attentive, patient and trustworthy, and I make a point of adapting to each animal's specific needs. I also have experience with dogs and cats of many breeds and personalities, which lets me understand and respect what makes each of them different."
+    "body4": "I'm attentive, patient and trustworthy, and I make a point of adapting to each animal's specific needs. I also have experience with dogs and cats of many breeds and personalities, which lets me understand and respect what makes each of them different.",
+    "photoAlt": "Inês smiling next to a dog wearing a harness, with apartment buildings in the background"
   },
   "services": {
     "hub": {
@@ -114,22 +118,36 @@
       "title": "Pet Boarding",
       "cardText": "Your pet stays in a family environment, with personalised attention, plenty of play and affection.",
       "detail1": "Travelling for work or taking a few days off, and worried about your pet's wellbeing? Let me help make sure your furry friend gets all the care they deserve while you're away!",
-      "detail2": "With Pet Boarding, your pet enjoys a family environment, personalised attention, plenty of play and affection at the pet-sitter's home."
+      "detail2": "With Pet Boarding, your pet enjoys a family environment, personalised attention, plenty of play and affection at the pet-sitter's home.",
+      "photoAlt": "Dogs resting together on a bed during pet boarding"
     },
     "petSitting": {
       "title": "Pet Sitting",
       "cardText": "I visit your pet at home: feeding, fresh water, playtime and company, without breaking their routine.",
       "detail1": "I visit your pet at your own home, taking care of feeding, fresh water, playtime and company, keeping their usual routine stress-free.",
       "detail2": "You get photos, videos and a status update after every visit.",
-      "detail3": "I also do cat sitting, always charged at the 1-dog rate regardless of how many cats are involved."
+      "detail3": "I also do cat sitting, always charged at the 1-dog rate regardless of how many cats are involved.",
+      "photoAlt": "Cats at home during a pet sitting visit"
     },
     "dogWalking": {
       "title": "Dog Walking",
       "cardText": "Walks adapted to your dog's needs and fitted around your schedule. Happy, healthy dogs.",
       "detail1": "Out of the house all day, unwell, or just don't have time to walk your dog? Let me help give your furry companion the walks they deserve!",
       "detail2": "Walks are adapted to your dog's needs and fitted around your schedule, so your dog gets all the attention they need.",
+      "photoAlt": "Dog outdoors during a walk",
       "galleryEyebrow": "Gallery · Dog Walking",
-      "galleryHeading": "Walking companions"
+      "galleryHeading": "Walking companions",
+      "galleryAlt": [
+        "Small white terrier mix wearing a red harness, sitting on a dirt path",
+        "Yorkshire terrier wearing a bandana, smiling among daisies",
+        "Dog giving its paw to a person's hand in a park, on a leash",
+        "Golden retriever lying in the grass with a stick, in a park",
+        "Two fluffy dogs standing side by side on a wooden deck outdoors",
+        "Yellow Labrador lying down outdoors, wearing a harness, looking up",
+        "White and tan dog sitting in a field of yellow flowers, on a leash",
+        "Pomeranian running on the grass",
+        "Labrador wearing an orange harness, sitting in a backyard"
+      ]
     }
   },
   "pricing": {
@@ -204,27 +222,27 @@
     "intro": "How it works, from first contact to coming home.",
     "steps": [
       {
-        "title": "Free initial assessment",
+        "title": "How does the initial assessment work?",
         "body": "We schedule a no-commitment meeting to get to know your pet, their routines, and work out which service makes the most sense."
       },
       {
-        "title": "Bookings",
+        "title": "How do bookings and the deposit work?",
         "body": "Bookings are only confirmed once a 50% Booking Deposit is paid."
       },
       {
-        "title": "Cancellation policy",
+        "title": "What is the cancellation policy?",
         "body": ""
       },
       {
-        "title": "Trial day",
+        "title": "What is the Trial Day and when does it apply?",
         "body": "Every new dog must complete a mandatory Trial Day. If severe anxiety or a need for continuous supervision is identified, an individualised-care fee of +5€ per day applies. If reactivity towards other animals is identified, or full exclusivity is required (no integration or stay with other guests), the booking may still be accepted — but due to the separation logistics required, it will be charged at the 2-dog occupancy rate."
       },
       {
-        "title": "Schedule management",
+        "title": "What are the operating hours and after-hours fees?",
         "body": "Official hours are 08:00 to 20:00. An After-Hours fee of 5€ applies per hour or part thereof. From 22:00, doors close for the night and the pet stays over (an extra full day is billed for the following day)."
       },
       {
-        "title": "During the stay",
+        "title": "What do I receive during my pet's stay?",
         "body": "You receive photos, videos and a status update every day, so you never have to worry."
       }
     ],
@@ -255,6 +273,7 @@
     "emailLabel": "Email",
     "instagramLabel": "Instagram · day to day",
     "whereLabel": "Where I am",
-    "hoursNote": "Monday to Sunday, 08:00 – 20:00. Outside these hours a 5€ per hour (or part thereof) fee applies."
+    "hoursNote": "Monday to Sunday, 08:00 – 20:00. Outside these hours a 5€ per hour (or part thereof) fee applies.",
+    "mapTitle": "Map showing the location of Os Pets da Inês"
   }
 }

@@ -30,16 +30,20 @@ export default function PricingTable({
       <p className="mb-6 text-sm text-ink-muted">
         {t(season === 'high' ? 'pricing.seasonHigh' : 'pricing.seasonLow')}
       </p>
-      <div className="card overflow-x-auto">
+      <section aria-label={tableTitle} className="card overflow-x-auto">
         <table className="w-full min-w-md border-collapse text-left">
           <thead>
             <tr className="bg-panel">
-              <th className="px-6 py-4 text-xs font-bold tracking-wider text-ink-muted uppercase">
+              <th
+                scope="col"
+                className="px-6 py-4 text-xs font-bold tracking-wider text-ink-muted uppercase"
+              >
                 {t('pricing.frequency')}
               </th>
               {dogsColumns.map((label) => (
                 <th
                   key={label}
+                  scope="col"
                   className="px-6 py-4 text-right font-heading text-lg font-semibold"
                 >
                   {label}
@@ -80,7 +84,7 @@ export default function PricingTable({
             })}
           </tbody>
         </table>
-      </div>
+      </section>
       <p className="mt-6 rounded-2xl bg-panel px-6 py-4 text-sm prose">
         {t('pricing.sittingCatsNote')}
       </p>
