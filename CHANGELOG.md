@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.2](https://github.com/dippas/pets-da-ines/compare/v1.4.1...v1.4.2) (2026-09-05)
+
+### Refactoring
+
+* **ui:** remove redundant eyebrow labels and step numbers ([#16](https://github.com/dippas/pets-da-ines/issues/16)) ([fecba4e](https://github.com/dippas/pets-da-ines/commit/fecba4e260ecb4f45113ec28e4e40db4e22957eb))
+
 ## [1.4.1](https://github.com/dippas/pets-da-ines/compare/v1.4.0...v1.4.1) (2026-09-05)
 
 ### Bug Fixes
