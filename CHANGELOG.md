@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.2](https://github.com/dippas/pets-da-ines/compare/v1.6.1...v1.6.2) (2026-09-05)
+
+### Chores
+
+* **deploy:** expose app version as a response header ([#22](https://github.com/dippas/pets-da-ines/issues/22)) ([d395444](https://github.com/dippas/pets-da-ines/commit/d395444429625b9668eaa0787b953fb969aaeed8))
+
 ## [1.6.1](https://github.com/dippas/pets-da-ines/compare/v1.6.0...v1.6.1) (2026-09-05)
 
 ### Refactoring
