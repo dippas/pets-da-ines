@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.6](https://github.com/dippas/pets-da-ines/compare/v1.6.5...v1.6.6) (2026-09-05)
+
+### Bug Fixes
+
+* **ui:** remove booking step numbers, align pricing heading size ([#26](https://github.com/dippas/pets-da-ines/issues/26)) ([982f8db](https://github.com/dippas/pets-da-ines/commit/982f8db4faf41dbcbe0d9623d258493662a6f111))
+
 ## [1.6.5](https://github.com/dippas/pets-da-ines/compare/v1.6.4...v1.6.5) (2026-09-05)
 
 ### Bug Fixes
