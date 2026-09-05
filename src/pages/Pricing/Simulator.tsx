@@ -40,6 +40,7 @@ interface SimulatorProps {
 
 export default function Simulator({ calculator, locale }: SimulatorProps) {
   const t = useTranslations()
+  const highSeasonDates = t.raw('pricing.highSeasonDates') as string[]
   const {
     service,
     setService,
@@ -61,8 +62,36 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
   } = calculator
 
   return (
-    <div className="mb-16 grid gap-8 lg:grid-cols-2 lg:items-start">
-      <div className="rounded-4xl border border-ink-subtle bg-white p-6 sm:p-10">
+    <div className="mb-16 rounded-4xl border border-ink-subtle bg-white p-6 sm:p-10 lg:grid lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-x-8 lg:gap-y-0 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0">
+      <div
+        aria-live="polite"
+        className="mb-8 flex items-baseline justify-between gap-4 bg-navy px-6 py-3 text-cream max-lg:rounded-full lg:col-start-2 lg:mb-0 lg:block lg:rounded-t-4xl lg:p-10 lg:pb-6"
+      >
+        <div className="flex min-w-0 items-baseline gap-2 lg:block">
+          <Label className="truncate text-gold lg:mb-6">
+            {t(`pricing.calculator.${unitTitleKey}`)}
+          </Label>
+          <div className="flex items-baseline gap-1 lg:gap-2">
+            <span className="font-heading text-2xl font-semibold tabular-nums lg:text-6xl">
+              {eur(unitPrice, locale)}
+            </span>
+            <span className="font-heading text-base lg:text-3xl">€</span>
+          </div>
+          <div className="mt-2 hidden text-sm text-off-white-secondary lg:block">
+            {dogs} × {times} · {t(`pricing.bands.${band.id}`).toLowerCase()}
+          </div>
+        </div>
+        <div className="flex min-w-0 items-baseline gap-2 lg:mt-6 lg:justify-between lg:border-y lg:border-off-white-subtle lg:py-6">
+          <span className="truncate text-xs text-off-white-strong lg:text-sm">
+            {t('pricing.calculator.weekTotal')}
+          </span>
+          <span className="font-heading text-xl font-semibold tabular-nums lg:text-3xl">
+            {eur(weekTotal, locale)}€
+          </span>
+        </div>
+      </div>
+
+      <div className="lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:rounded-4xl lg:border lg:border-ink-subtle lg:bg-white lg:p-10">
         <fieldset className="mb-6">
           <Label as="legend" className="mb-3 text-ink-muted">
             {t('pricing.calculator.service')}
@@ -162,10 +191,10 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
           )}
         </div>
         <div className="mb-8">
-          <Label className="mb-4 text-ink-muted">
-            {t('pricing.calculator.dogs')}
-          </Label>
           <div className="mb-4 flex items-baseline justify-between">
+            <Label className="text-ink-muted">
+              {t('pricing.calculator.dogs')}
+            </Label>
             <span className="font-heading text-2xl tabular-nums text-indigo">
               {dogs}
             </span>
@@ -211,53 +240,34 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
         </div>
       </div>
 
-      <div
-        aria-live="polite"
-        className="rounded-4xl bg-navy p-6 text-cream sm:sticky sm:top-24 sm:p-10"
-      >
-        <Label className="mb-6 text-gold">
-          {t(`pricing.calculator.${unitTitleKey}`)}
-        </Label>
-        <div className="mb-2 flex items-baseline gap-2">
-          <span className="font-heading text-6xl font-semibold tabular-nums">
-            {eur(unitPrice, locale)}
-          </span>
-          <span className="font-heading text-3xl">€</span>
-        </div>
-        <div className="mb-6 text-sm text-off-white-secondary">
-          {dogs} × {times} · {t(`pricing.bands.${band.id}`).toLowerCase()}
-        </div>
-        <div className="mb-6 flex items-baseline justify-between gap-4 border-t border-off-white-subtle pt-6">
-          <span className="text-sm text-off-white-strong">
-            {t('pricing.calculator.weekTotal')}
-          </span>
-          <span className="font-heading text-3xl font-semibold tabular-nums">
-            {eur(weekTotal, locale)}€
-          </span>
-        </div>
-        <div className="flex flex-col gap-3 border-t border-off-white-subtle pt-6 text-sm text-off-white-strong">
-          <span>{t('pricing.calculator.assessment')}</span>
-          <span>{t('pricing.calculator.deposit')}</span>
-          <span>
-            {t.rich('pricing.calculator.cancellation', {
-              link: (chunks) => (
-                <Button
-                  variant="link"
-                  to={pagePath('booking', locale)}
-                  className="text-gold hover:text-cream"
-                >
-                  {chunks}
-                </Button>
-              ),
-            })}
-          </span>
-        </div>
+      <div className="mt-8 flex flex-col gap-3 text-sm text-ink-secondary lg:col-start-2 lg:row-start-2 lg:mt-0 lg:rounded-b-4xl lg:bg-navy lg:px-10 lg:pb-6 lg:text-off-white-strong">
         <Button
           to={WHATSAPP_HREF}
-          className="mt-8 w-full bg-gold text-ink hover:bg-cream hover:text-ink"
+          className="mb-3 w-full bg-navy text-cream hover:bg-indigo-light hover:text-off-white lg:order-last lg:mt-5 lg:mb-0 lg:bg-gold lg:text-ink lg:hover:bg-cream lg:hover:text-ink"
         >
           {t('pricing.calculator.requestQuote')}
         </Button>
+        <span>{t('pricing.calculator.assessment')}</span>
+        <span>{t('pricing.calculator.deposit')}</span>
+        <span>
+          {t.rich('pricing.calculator.cancellation', {
+            link: (chunks) => (
+              <Button
+                variant="link"
+                to={pagePath('booking', locale)}
+                className="lg:text-gold lg:hover:text-cream"
+              >
+                {chunks}
+              </Button>
+            ),
+          })}
+        </span>
+        <span>
+          <span className="font-semibold text-gold-dark lg:text-gold">
+            {t('pricing.highSeasonLabel')}:
+          </span>{' '}
+          {highSeasonDates.join(' · ')}
+        </span>
       </div>
     </div>
   )
