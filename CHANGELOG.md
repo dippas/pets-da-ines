@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.5](https://github.com/dippas/pets-da-ines/compare/v1.6.4...v1.6.5) (2026-09-05)
+
+### Bug Fixes
+
+* **home:** stop testimonial expand from clipping content ([#25](https://github.com/dippas/pets-da-ines/issues/25)) ([41a90a5](https://github.com/dippas/pets-da-ines/commit/41a90a54444c95c40b5bff89daa4a7bcb48ff6e7))
+
 ## [1.6.4](https://github.com/dippas/pets-da-ines/compare/v1.6.3...v1.6.4) (2026-09-05)
 
 ### Bug Fixes
