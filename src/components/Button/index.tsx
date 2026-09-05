@@ -61,14 +61,20 @@ export default function Button({
 
   if (isInternal(href)) {
     return (
-      <Link to={href} className={className}>
+      <Link to={href} aria-label={ariaLabel} className={className}>
         {children}
       </Link>
     )
   }
 
   return (
-    <a href={href} target="_blank" rel="noreferrer" className={className}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={ariaLabel}
+      className={className}
+    >
       {children}
     </a>
   )
