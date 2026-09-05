@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.0](https://github.com/dippas/pets-da-ines/compare/v1.5.2...v1.6.0) (2026-09-05)
+
+### Features
+
+* **home:** real Google reviews ([#20](https://github.com/dippas/pets-da-ines/issues/20)) ([8ac965f](https://github.com/dippas/pets-da-ines/commit/8ac965f6c08424ea73e866b46ecba9f75aa6193a))
+
 ## [1.5.2](https://github.com/dippas/pets-da-ines/compare/v1.5.1...v1.5.2) (2026-09-05)
 
 ### Bug Fixes
