@@ -154,7 +154,7 @@ export default function Home() {
             items={quotes.map((item) => (
               <blockquote
                 key={item.author}
-                className="flex h-84 flex-col justify-between gap-6 rounded-3xl border border-off-white-subtle bg-off-white-faint p-8"
+                className="flex min-h-84 flex-col justify-between gap-6 rounded-3xl border border-off-white-subtle bg-off-white-faint p-8"
               >
                 <TestimonialQuote quote={item.quote} />
                 <footer className="flex items-center justify-between gap-4">
