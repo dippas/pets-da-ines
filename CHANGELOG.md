@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.1](https://github.com/dippas/pets-da-ines/compare/v1.4.0...v1.4.1) (2026-09-05)
+
+### Bug Fixes
+
+* **services:** fix photo sizing and layout on tablet and mobile ([#15](https://github.com/dippas/pets-da-ines/issues/15)) ([edabde0](https://github.com/dippas/pets-da-ines/commit/edabde0ec660567f1b814ec69c5a502d2d5d89dd))
+
 ## [1.4.0](https://github.com/dippas/pets-da-ines/compare/v1.3.2...v1.4.0) (2026-09-05)
 
 ### Features
