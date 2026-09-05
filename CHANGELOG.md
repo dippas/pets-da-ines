@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.2](https://github.com/dippas/pets-da-ines/compare/v1.3.1...v1.3.2) (2026-09-05)
+
+### Bug Fixes
+
+* **a11y:** add focus rings and larger touch targets ([#13](https://github.com/dippas/pets-da-ines/issues/13)) ([5a4fcff](https://github.com/dippas/pets-da-ines/commit/5a4fcffbbc4560233a599efee3a0dc4e39220cb8))
+
 ## [1.3.1](https://github.com/dippas/pets-da-ines/compare/v1.3.0...v1.3.1) (2026-09-04)
 
 ### Refactoring
