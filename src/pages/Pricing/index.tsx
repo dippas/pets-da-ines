@@ -17,9 +17,7 @@ export default function Pricing() {
       </h1>
       <p className="mb-10 max-w-measure text-lg prose">{t('pricing.intro')}</p>
 
-      <h2 className="mb-6 text-2xl font-bold text-ink">
-        {t('pricing.calculator.heading')}
-      </h2>
+      <h2 className="section-heading">{t('pricing.calculator.heading')}</h2>
       <Simulator calculator={calculator} locale={locale} />
 
       <PricingTable calculator={calculator} locale={locale} />
