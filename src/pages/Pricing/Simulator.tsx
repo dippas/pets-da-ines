@@ -65,24 +65,26 @@ export default function Simulator({ calculator, locale }: SimulatorProps) {
     <div className="mb-16 rounded-4xl border border-ink-subtle bg-white p-6 sm:p-10 lg:grid lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-x-8 lg:gap-y-0 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0">
       <div
         aria-live="polite"
-        className="mb-8 flex items-baseline justify-between gap-4 bg-navy px-6 py-3 text-cream max-lg:rounded-full lg:col-start-2 lg:mb-0 lg:block lg:rounded-t-4xl lg:p-10 lg:pb-6"
+        className="mb-8 flex flex-col gap-2 rounded-lg bg-navy px-6 py-4 text-cream sm:rounded-none lg:col-start-2 lg:mb-0 lg:block lg:gap-0 lg:rounded-t-4xl lg:p-10 lg:pb-6"
       >
-        <div className="flex min-w-0 items-baseline gap-2 lg:block">
-          <Label className="truncate text-gold lg:mb-6">
-            {t(`pricing.calculator.${unitTitleKey}`)}
-          </Label>
-          <div className="flex items-baseline gap-1 lg:gap-2">
-            <span className="font-heading text-2xl font-semibold tabular-nums lg:text-6xl">
-              {eur(unitPrice, locale)}
-            </span>
-            <span className="font-heading text-base lg:text-3xl">€</span>
+        <div>
+          <div className="flex items-baseline justify-between gap-4 lg:block">
+            <Label className="text-gold lg:mb-6 lg:block">
+              {t(`pricing.calculator.${unitTitleKey}`)}
+            </Label>
+            <div className="flex items-baseline gap-1 lg:gap-2">
+              <span className="font-heading text-2xl font-semibold tabular-nums lg:text-6xl">
+                {eur(unitPrice, locale)}
+              </span>
+              <span className="font-heading text-base lg:text-3xl">€</span>
+            </div>
           </div>
           <div className="mt-2 hidden text-sm text-off-white-secondary lg:block">
             {dogs} × {times} · {t(`pricing.bands.${band.id}`).toLowerCase()}
           </div>
         </div>
-        <div className="flex min-w-0 items-baseline gap-2 lg:mt-6 lg:justify-between lg:border-y lg:border-off-white-subtle lg:py-6">
-          <span className="truncate text-xs text-off-white-strong lg:text-sm">
+        <div className="flex items-baseline justify-between gap-4 lg:mt-6 lg:border-y lg:border-off-white-subtle lg:py-6">
+          <span className="text-xs text-off-white-strong lg:text-sm">
             {t('pricing.calculator.weekTotal')}
           </span>
           <span className="font-heading text-xl font-semibold tabular-nums lg:text-3xl">
