@@ -7,35 +7,32 @@ import Button from '../../components/Button'
 import Img from '../../components/Img'
 import Label from '../../components/Label'
 import { useLocale } from '../../hooks/useLocale'
-import { servicePhotoPool, useServicePhoto } from '../../hooks/useServicePhoto'
 import PawBlob from '../../icons/PawBlob'
+import {
+  galleryOrder,
+  servicePhoto,
+  servicePhotoPool,
+} from '../../lib/servicePhotoPool'
 import { pagePath } from '../../routes/paths'
 import 'swiper/css'
 import 'swiper/css/navigation'
-
-const GALLERY_HEIGHTS = [1365, 1024, 1024, 1365, 1024, 1365, 1024, 1024]
-
-const GALLERY_COLUMNS = [
-  [0, 1],
-  [2, 3],
-  [4, 5],
-  [6, 7],
-]
 
 export default function ServicesHub() {
   const t = useTranslations()
   const locale = useLocale()
   const pricingPath = pagePath('pricing', locale)
-  const petBoardingPhoto = useServicePhoto(
-    'pet-boarding',
-    'detail:pet-boarding',
-  )
-  const petSittingPhoto = useServicePhoto('pet-sitting', 'detail:pet-sitting')
-  const dogWalkingPhoto = useServicePhoto('dog-walking', 'detail:dog-walking')
   const dogWalkingPool = servicePhotoPool('dog-walking')
+  const petBoardingPhoto = servicePhoto('pet-boarding')
+  const petSittingPhoto = servicePhoto('pet-sitting')
+  const dogWalkingPhoto = servicePhoto('dog-walking')
   const dogWalkingGalleryAlt = t.raw(
     'services.dogWalking.galleryAlt',
-  ) as string[]
+  ) as Record<number, string>
+  const dogWalkingGalleryOrder = galleryOrder('dog-walking')
+  const galleryColumns = Array.from(
+    { length: Math.floor(dogWalkingGalleryOrder.length / 2) },
+    (_, i) => dogWalkingGalleryOrder.slice(i * 2, i * 2 + 2),
+  )
 
   return (
     <>
@@ -171,7 +168,7 @@ export default function ServicesHub() {
                 nextSlideMessage: t('common.carousel.next'),
               }}
             >
-              {GALLERY_COLUMNS.map((column) => (
+              {galleryColumns.map((column) => (
                 <SwiperSlide key={column[0]}>
                   <div className="flex flex-col gap-3">
                     {column.map((index) => (
@@ -180,8 +177,8 @@ export default function ServicesHub() {
                         src={dogWalkingPool[index]}
                         alt={dogWalkingGalleryAlt[index]}
                         width={768}
-                        height={GALLERY_HEIGHTS[index]}
-                        className="aspect-3/4 w-full rounded-2xl object-cover sm:aspect-auto"
+                        height={1024}
+                        className="aspect-3/4 w-full rounded-2xl object-cover"
                       />
                     ))}
                   </div>

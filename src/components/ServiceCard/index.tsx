@@ -2,7 +2,7 @@ import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import { useTranslations } from 'use-intl'
 import type { ServiceDescriptor } from '../../data/services'
 import { useLocale } from '../../hooks/useLocale'
-import { useServicePhoto } from '../../hooks/useServicePhoto'
+import { servicePhoto } from '../../lib/servicePhotoPool'
 import { pagePath } from '../../routes/paths'
 import Button from '../Button'
 import Img from '../Img'
@@ -16,7 +16,7 @@ export default function ServiceCard({
   const locale = useLocale()
   const servicesPath = pagePath('services', locale)
   const title = t(`services.${service.translationKey}.title`)
-  const photo = useServicePhoto(service.slug, `card:${service.slug}`)
+  const photo = servicePhoto(service.slug)
 
   return (
     <article className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-lg transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-2xl sm:flex-row lg:flex-col">
