@@ -34,7 +34,7 @@ export default function BookingConditions() {
             key={step.title}
             className="flex flex-col gap-2 border-t border-ink-subtle py-8 sm:flex-row sm:gap-6"
           >
-            <span className="shrink-0 font-heading text-3xl text-gold sm:w-16">
+            <span className="shrink-0 font-heading text-3xl text-gold-dark sm:w-16">
               {String(index + 1).padStart(2, '0')}
             </span>
             <div className="min-w-0 flex-1">

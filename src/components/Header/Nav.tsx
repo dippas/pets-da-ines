@@ -10,7 +10,7 @@ const WHATSAPP_HREF = 'https://wa.me/351927350019'
 
 const pillClass = ({ isActive }: { isActive: boolean }) =>
   cn(
-    'rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200',
+    'focus-ring rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200',
     isActive
       ? 'bg-lavender text-indigo'
       : 'text-ink hover:bg-lavender hover:text-indigo',
@@ -82,7 +82,7 @@ export default function Nav({ hideLinks = false }: NavProps) {
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 cn(
-                  'border-b border-ink-subtle py-4 text-lg font-semibold',
+                  'focus-ring border-b border-ink-subtle py-4 text-lg font-semibold',
                   isActive ? 'text-indigo' : 'text-ink',
                 )
               }

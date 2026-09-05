@@ -147,8 +147,12 @@
   @apply text-xs font-bold tracking-badge uppercase;
 }
 
+@utility focus-ring {
+  @apply focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-current;
+}
+
 @utility btn-base {
-  @apply transition-colors duration-200;
+  @apply focus-ring transition-colors duration-200;
 }
 
 @utility btn-solid {
@@ -204,7 +208,7 @@
 }
 
 .swiper-button-prev {
-  @apply rounded-full border transition-colors duration-200;
+  @apply focus-ring size-11 rounded-full border transition-colors duration-200;
 
   &::after {
     @apply size-2 border-r-2 border-b-2 content-[''] -mr-0.5 rotate-135;
@@ -212,7 +216,7 @@
 }
 
 .swiper-button-next {
-  @apply rounded-full border transition-colors duration-200;
+  @apply focus-ring size-11 rounded-full border transition-colors duration-200;
 
   &::after {
     @apply size-2 border-r-2 border-b-2 content-[''] -ml-0.5 -rotate-45;
