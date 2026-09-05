@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.2](https://github.com/dippas/pets-da-ines/compare/v1.5.1...v1.5.2) (2026-09-05)
+
+### Bug Fixes
+
+* **pricing:** simulator result panel ([#19](https://github.com/dippas/pets-da-ines/issues/19)) ([f9ef5e8](https://github.com/dippas/pets-da-ines/commit/f9ef5e85663bacd6b7ea04e7002199dba1c65d49))
+
 ## [1.5.1](https://github.com/dippas/pets-da-ines/compare/v1.5.0...v1.5.1) (2026-09-05)
 
 ### Bug Fixes
