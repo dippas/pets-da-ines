@@ -77,7 +77,6 @@
     "body2": "Sou eu que cuido pessoalmente de cada animal, assegurando o seu bem-estar e segurança e enviando sempre atualizações aos tutores para que não se preocupem.",
     "heroAlt": "Inês sorridente, agachada, a passear quatro cães de trela num caminho ao ar livre",
     "services": {
-      "eyebrow": "Os nossos serviços",
       "heading": "Três formas de cuidar do seu animal"
     },
     "badges": {
@@ -106,7 +105,6 @@
     }
   },
   "about": {
-    "eyebrow": "Sobre mim",
     "heading": "Inês Paulo",
     "body1": "Olá! O meu nome é Inês, tenho 27 anos e sou apaixonada por animais desde que me lembro.",
     "body2": "Cresci rodeada por cães e gatos, e essa convivência tornou-se uma parte essencial da minha vida. Ao longo dos anos, cuidei de animais de todas as idades, tamanhos e personalidades — tanto de amigos e familiares quanto de clientes — e cada experiência reforçou o meu amor por eles.",
@@ -116,7 +114,6 @@
   },
   "services": {
     "hub": {
-      "eyebrow": "Serviços",
       "heading": "Os nossos serviços",
       "intro": "Antes de qualquer serviço é feita uma avaliação inicial gratuita e sem compromisso para conhecermos melhor os seus animais e ajustar os nossos serviços às vossas necessidades."
     },
@@ -157,7 +154,6 @@
     }
   },
   "pricing": {
-    "eyebrow": "Preçário",
     "heading": "Quanto custa cuidar do seu animal",
     "intro": "O preço depende do serviço, do número de cães e da frequência semanal. Quanto mais regular, menor o valor por sessão.",
     "frequency": "Frequência",
@@ -223,7 +219,6 @@
     }
   },
   "booking": {
-    "eyebrow": "Reservas",
     "heading": "Condições de Reserva",
     "intro": "Como funciona, do primeiro contacto ao regresso a casa.",
     "steps": [
@@ -273,7 +268,6 @@
     }
   },
   "contact": {
-    "eyebrow": "Contactos",
     "heading": "Falar comigo",
     "whatsappLabel": "WhatsApp · resposta rápida",
     "emailLabel": "Email",

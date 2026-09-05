@@ -77,7 +77,6 @@
     "body2": "I personally look after every animal myself, making sure they're safe and well, and I always send owners updates so they never have to worry.",
     "heroAlt": "Inês smiling, crouched down, walking four dogs on leashes along an outdoor path",
     "services": {
-      "eyebrow": "Our services",
       "heading": "Three ways to care for your pet"
     },
     "badges": {
@@ -106,7 +105,6 @@
     }
   },
   "about": {
-    "eyebrow": "About me",
     "heading": "Inês Paulo",
     "body1": "Hi! My name is Inês, I'm 27 years old, and I've been passionate about animals for as long as I can remember.",
     "body2": "I grew up surrounded by dogs and cats, and that closeness became an essential part of my life. Over the years I've cared for animals of every age, size and personality — friends' and family's pets as well as clients' — and every experience deepened my love for them.",
@@ -116,7 +114,6 @@
   },
   "services": {
     "hub": {
-      "eyebrow": "Services",
       "heading": "Our services",
       "intro": "Every service starts with a free, no-commitment initial assessment, so we get to know your pets and tailor the service to your needs."
     },
@@ -157,7 +154,6 @@
     }
   },
   "pricing": {
-    "eyebrow": "Pricing",
     "heading": "How much it costs to care for your pet",
     "intro": "The price depends on the service, the number of dogs and the weekly frequency. The more regular it is, the lower the price per session.",
     "frequency": "Frequency",
@@ -223,7 +219,6 @@
     }
   },
   "booking": {
-    "eyebrow": "Bookings",
     "heading": "Booking Conditions",
     "intro": "How it works, from first contact to coming home.",
     "steps": [
@@ -273,7 +268,6 @@
     }
   },
   "contact": {
-    "eyebrow": "Contact",
     "heading": "Get in touch",
     "whatsappLabel": "WhatsApp · fast reply",
     "emailLabel": "Email",

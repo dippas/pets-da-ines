@@ -94,9 +94,6 @@ export default function Home() {
       <section className="relative overflow-hidden border-y border-navy-subtle bg-panel py-16 sm:py-20">
         <PawBlob className="pointer-events-none absolute -top-16 -right-20 size-72 rotate-12 opacity-50" />
         <div className="relative mx-auto mb-10 max-w-6xl px-4 sm:px-8">
-          <Label tracking="eyebrow" className="mb-3">
-            {t('home.services.eyebrow')}
-          </Label>
           <h2 className="text-3xl font-bold text-ink sm:text-5xl">
             {t('home.services.heading')}
           </h2>
