@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.1](https://github.com/dippas/pets-da-ines/compare/v1.5.0...v1.5.1) (2026-09-05)
+
+### Bug Fixes
+
+* **a11y:** add missing alt text for dog-walking gallery photos 10-18 ([#18](https://github.com/dippas/pets-da-ines/issues/18)) ([7b7bae9](https://github.com/dippas/pets-da-ines/commit/7b7bae991dedaf9fc791f8597c9dce40a61832d9))
+
 ## [1.5.0](https://github.com/dippas/pets-da-ines/compare/v1.4.2...v1.5.0) (2026-09-05)
 
 ### Features
