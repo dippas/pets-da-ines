@@ -228,6 +228,10 @@
   }
 }
 
+.swiper-nav-light .swiper-wrapper {
+  @apply items-start;
+}
+
 .swiper-nav-light .swiper-slide {
   @apply h-auto;
 }

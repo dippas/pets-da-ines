@@ -1,19 +1,25 @@
+import { StarIcon } from '@phosphor-icons/react/ssr'
 import { useTranslations } from 'use-intl'
 import Button from '../../components/Button'
 import Carousel from '../../components/Carousel'
 import Img from '../../components/Img'
 import Label from '../../components/Label'
 import ServiceCard from '../../components/ServiceCard'
+import TestimonialQuote from '../../components/TestimonialQuote'
 import { services } from '../../data/services'
 import { useLocale } from '../../hooks/useLocale'
 import PawBlob from '../../icons/PawBlob'
 import { pagePath } from '../../routes/paths'
 
 const WHATSAPP_HREF = 'https://wa.me/351927350019'
+const STAR_RANKS = [1, 2, 3, 4, 5]
 
 interface Quote {
   quote: string
   author: string
+  rating: number
+  date: string
+  url: string
 }
 
 export default function Home() {
@@ -103,13 +109,24 @@ export default function Home() {
             <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
-        <div className="relative mx-auto mt-10 flex max-w-6xl flex-wrap items-center gap-3 px-4 sm:px-8">
-          <Label tracking="badge" className="mr-2 text-navy-secondary">
+        <div className="relative mx-auto mt-10 max-w-6xl px-4 sm:flex sm:flex-wrap sm:items-center sm:gap-3 sm:px-8">
+          <Label
+            tracking="badge"
+            className="mb-3 block text-navy-secondary sm:mb-0 sm:inline"
+          >
             {t('home.badges.allServices')}
           </Label>
-          <span className="badge-pill">{t('home.badges.assessment')}</span>
-          <span className="badge-pill">{t('home.badges.updates')}</span>
-          <span className="badge-pill">{t('home.badges.pets')}</span>
+          <div className="flex flex-col gap-2 sm:contents">
+            <span className="badge-pill w-full text-center sm:w-auto">
+              {t('home.badges.assessment')}
+            </span>
+            <span className="badge-pill w-full text-center sm:w-auto">
+              {t('home.badges.updates')}
+            </span>
+            <span className="badge-pill w-full text-center sm:w-auto">
+              {t('home.badges.pets')}
+            </span>
+          </div>
         </div>
       </section>
 
@@ -126,6 +143,11 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-off-white sm:text-5xl">
               {t('home.testimonials.heading')}
             </h2>
+            {locale === 'en' && (
+              <p className="mt-3 text-sm text-off-white-muted">
+                {t('home.testimonials.translatedNotice')}
+              </p>
+            )}
           </div>
           <Carousel
             ariaLabel={t('home.testimonials.heading')}
@@ -134,11 +156,34 @@ export default function Home() {
                 key={item.author}
                 className="flex h-full flex-col justify-between gap-6 rounded-3xl border border-off-white-subtle bg-off-white-faint p-8"
               >
-                <p className="text-lg leading-relaxed font-medium text-off-white">
-                  "{item.quote}"
-                </p>
-                <footer className="text-sm font-bold tracking-wide text-gold uppercase">
-                  {item.author}
+                <TestimonialQuote quote={item.quote} />
+                <footer className="flex items-center justify-between gap-4">
+                  <span className="text-sm font-bold tracking-wide text-gold uppercase">
+                    {item.author}
+                  </span>
+                  <div className="flex shrink-0 items-center gap-2">
+                    <span className="flex gap-0.5" aria-hidden="true">
+                      {STAR_RANKS.filter((star) => star <= item.rating).map(
+                        (star) => (
+                          <StarIcon
+                            key={star}
+                            size={14}
+                            weight="fill"
+                            color="var(--color-gold)"
+                          />
+                        ),
+                      )}
+                    </span>
+                    <span className="sr-only">{item.rating}/5</span>
+                    <Button
+                      to={item.url}
+                      variant="bare"
+                      ariaLabel={t('home.testimonials.viewOnGoogle')}
+                      className="text-xs text-off-white-muted hover:text-off-white-secondary hover:underline"
+                    >
+                      {item.date}
+                    </Button>
+                  </div>
                 </footer>
               </blockquote>
             ))}
