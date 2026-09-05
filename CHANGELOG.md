@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.4](https://github.com/dippas/pets-da-ines/compare/v1.6.3...v1.6.4) (2026-09-05)
+
+### Bug Fixes
+
+* **home:** uniform testimonial card height, sort by date ([#24](https://github.com/dippas/pets-da-ines/issues/24)) ([db415b9](https://github.com/dippas/pets-da-ines/commit/db415b9e0e130578f7dcbffe8e3265a327a0addc))
+
 ## [1.6.3](https://github.com/dippas/pets-da-ines/compare/v1.6.2...v1.6.3) (2026-09-05)
 
 ### Bug Fixes
