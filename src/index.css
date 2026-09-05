@@ -64,6 +64,10 @@
   @apply leading-relaxed text-ink-secondary;
 }
 
+@utility prose-invert {
+  @apply leading-relaxed text-off-white-secondary;
+}
+
 @utility text-ink-secondary {
   @apply text-ink/70;
 }

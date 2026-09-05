@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="mb-2 text-2xl font-bold text-off-white">
             {t('common.brand.name')}
           </div>
-          <p className="mb-3 text-sm leading-relaxed">
+          <p className="mb-3 text-sm prose-invert">
             {t('common.footer.tagline')}
           </p>
           <p className="text-xs text-off-white-muted">
@@ -39,7 +39,7 @@ export default function Footer() {
           <Label as="h2" tracking="label" className="mb-4">
             {t('common.footer.addressTitle')}
           </Label>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm prose-invert">
             {ADDRESS_LINE1}
             <br />
             {ADDRESS_LINE2}
@@ -49,7 +49,7 @@ export default function Footer() {
           <Label as="h2" tracking="label" className="mb-4">
             {t('common.footer.hoursTitle')}
           </Label>
-          <p className="text-sm leading-relaxed">{t('common.footer.hours')}</p>
+          <p className="text-sm prose-invert">{t('common.footer.hours')}</p>
         </div>
         <div>
           <Label as="h2" tracking="label" className="mb-4">
