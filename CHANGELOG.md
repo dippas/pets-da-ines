@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.0](https://github.com/dippas/pets-da-ines/compare/v1.3.2...v1.4.0) (2026-09-05)
+
+### Features
+
+* **services:** rotate service photos weekly ([#14](https://github.com/dippas/pets-da-ines/issues/14)) ([dad28a6](https://github.com/dippas/pets-da-ines/commit/dad28a66273934eb598e329019d3db4fb0b4561b))
+
 ## [1.3.2](https://github.com/dippas/pets-da-ines/compare/v1.3.1...v1.3.2) (2026-09-05)
 
 ### Bug Fixes
