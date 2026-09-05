@@ -1,6 +1,5 @@
 import { useTranslations } from 'use-intl'
 import Img from '../../components/Img'
-import Label from '../../components/Label'
 import PawBlob from '../../icons/PawBlob'
 
 export default function About() {
@@ -25,9 +24,6 @@ export default function About() {
           />
         </div>
         <div>
-          <Label tracking="eyebrow" className="mb-4">
-            {t('about.eyebrow')}
-          </Label>
           <h1 className="mb-8 text-4xl font-bold tracking-tight text-ink sm:text-6xl">
             {t('about.heading')}
           </h1>

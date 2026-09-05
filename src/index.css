@@ -168,10 +168,6 @@
   @apply rounded-full border border-navy-strong bg-white px-4 py-2 text-sm font-semibold text-indigo;
 }
 
-@utility step-number {
-  @apply mb-3 block text-gold-dark;
-}
-
 @utility section-heading {
   @apply mb-6 text-3xl font-bold text-ink sm:text-4xl;
 }

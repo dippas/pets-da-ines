@@ -37,9 +37,6 @@ export default function ServicesHub() {
   return (
     <>
       <div className="mx-auto max-w-6xl px-4 pt-12 pb-2 sm:px-8 sm:pt-16">
-        <Label tracking="eyebrow" className="mb-4">
-          {t('services.hub.eyebrow')}
-        </Label>
         <h1 className="mb-4 text-4xl font-bold tracking-tight text-ink sm:text-6xl">
           {t('services.hub.heading')}
         </h1>
@@ -48,7 +45,6 @@ export default function ServicesHub() {
 
       <section className="service-section">
         <div className="max-w-measure-lg lg:max-w-none">
-          <Label className="step-number">01</Label>
           <h2 className="section-heading">{t('services.petBoarding.title')}</h2>
           <p className="mb-4 text-lg prose">
             {t('services.petBoarding.detail1')}
@@ -76,7 +72,6 @@ export default function ServicesHub() {
             className="service-photo order-2 lg:order-0"
           />
           <div className="max-w-measure-lg lg:max-w-none">
-            <Label className="step-number">02</Label>
             <h2 className="section-heading">
               {t('services.petSitting.title')}
             </h2>
@@ -99,7 +94,6 @@ export default function ServicesHub() {
 
       <section className="service-section">
         <div className="max-w-measure-lg lg:max-w-none">
-          <Label className="step-number">03</Label>
           <h2 className="section-heading">{t('services.dogWalking.title')}</h2>
           <p className="mb-4 text-lg prose">
             {t('services.dogWalking.detail1')}

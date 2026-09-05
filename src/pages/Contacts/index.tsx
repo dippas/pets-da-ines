@@ -49,9 +49,6 @@ export default function Contacts() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-8 sm:py-16">
-      <Label tracking="eyebrow" className="mb-4">
-        {t('contact.eyebrow')}
-      </Label>
       <h1 className="mb-12 text-4xl font-bold tracking-tight text-ink sm:text-6xl">
         {t('contact.heading')}
       </h1>
