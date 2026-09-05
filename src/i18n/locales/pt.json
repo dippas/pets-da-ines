@@ -40,8 +40,14 @@
       "contact": "Contactos",
       "menu": "Menu"
     },
-    "language": { "pt": "PT", "en": "EN" },
-    "brand": { "name": "Os Pets da Inês", "tagline": "Daily Care" },
+    "language": {
+      "pt": "PT",
+      "en": "EN"
+    },
+    "brand": {
+      "name": "Os Pets da Inês",
+      "tagline": "Daily Care"
+    },
     "cta": {
       "freeAssessmentShort": "Avaliação gratuita",
       "freeAssessment": "Marcar avaliação gratuita",
@@ -60,7 +66,10 @@
       "rights": "© 2026 Os Pets da Inês — Todos os direitos reservados.",
       "complaintsBook": "Livro de Reclamações"
     },
-    "carousel": { "previous": "Anterior", "next": "Seguinte" },
+    "carousel": {
+      "previous": "Anterior",
+      "next": "Seguinte"
+    },
     "skipToContent": "Saltar para o conteúdo principal",
     "cookieBanner": {
       "label": "Consentimento de cookies",
@@ -149,7 +158,16 @@
         "Labrador cor de mel deitado no chão, com peitoral, a olhar para cima",
         "Cão branco e castanho sentado num campo com flores amarelas, com trela",
         "Spitz-alemão a correr na relva",
-        "Labrador com peitoral laranja, sentado num quintal"
+        "Labrador com peitoral laranja, sentado num quintal",
+        "Cão pequeno e peludo, de raça indeterminada, a sorrir com a língua de fora, em frente a carros estacionados e uma árvore",
+        "Akita com peitoral vermelho, sentado na relva num parque",
+        "Cão a olhar para a câmara de cima, com a boca aberta, num caminho coberto de folhas",
+        "Cão pequeno de pelo bege a lamber o focinho, com trela na relva",
+        "Rottweiler com a língua de fora, na relva entre pequenas flores brancas",
+        "Labrador castanho sentado na relva, a olhar para cima com a língua de fora",
+        "Cão castanho e branco sentado na areia, a sorrir com a boca aberta",
+        "Border collie sentado na relva com as patas da frente levantadas, a segurar um pau",
+        "Golden retriever deitado na relva alta com a língua de fora, ao lado de um frisbee amarelo"
       ]
     }
   },
@@ -181,10 +199,26 @@
       "1to4": "1 a 4x por semana"
     },
     "transport": {
-      "r0_3": { "range": "0 km – 3 km", "one": "3,50€", "both": "7€" },
-      "r3_7": { "range": "3,1 km – 7 km", "one": "5,50€", "both": "11€" },
-      "r7_12": { "range": "7,1 km – 12 km", "one": "8€", "both": "16€" },
-      "r12_20": { "range": "12,1 km – 20 km", "one": "12,50€", "both": "25€" },
+      "r0_3": {
+        "range": "0 km – 3 km",
+        "one": "3,50€",
+        "both": "7€"
+      },
+      "r3_7": {
+        "range": "3,1 km – 7 km",
+        "one": "5,50€",
+        "both": "11€"
+      },
+      "r7_12": {
+        "range": "7,1 km – 12 km",
+        "one": "8€",
+        "both": "16€"
+      },
+      "r12_20": {
+        "range": "12,1 km – 20 km",
+        "one": "12,50€",
+        "both": "25€"
+      },
       "r20plus": {
         "range": "Mais de 20 km",
         "one": "15€ + 0,80€/km extra",

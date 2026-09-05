@@ -40,8 +40,14 @@
       "contact": "Contact",
       "menu": "Menu"
     },
-    "language": { "pt": "PT", "en": "EN" },
-    "brand": { "name": "Os Pets da Inês", "tagline": "Daily Care" },
+    "language": {
+      "pt": "PT",
+      "en": "EN"
+    },
+    "brand": {
+      "name": "Os Pets da Inês",
+      "tagline": "Daily Care"
+    },
     "cta": {
       "freeAssessmentShort": "Free assessment",
       "freeAssessment": "Book a free assessment",
@@ -60,7 +66,10 @@
       "rights": "© 2026 Os Pets da Inês — All rights reserved.",
       "complaintsBook": "Complaints Book"
     },
-    "carousel": { "previous": "Previous", "next": "Next" },
+    "carousel": {
+      "previous": "Previous",
+      "next": "Next"
+    },
     "skipToContent": "Skip to main content",
     "cookieBanner": {
       "label": "Cookie consent",
@@ -149,7 +158,16 @@
         "Yellow Labrador lying down outdoors, wearing a harness, looking up",
         "White and tan dog sitting in a field of yellow flowers, on a leash",
         "Pomeranian running on the grass",
-        "Labrador wearing an orange harness, sitting in a backyard"
+        "Labrador wearing an orange harness, sitting in a backyard",
+        "Small fluffy mixed-breed dog smiling with tongue out, in front of parked cars and a tree",
+        "Akita wearing a red harness, sitting on grass in a park",
+        "Dog looking up at the camera from above, mouth open, on a leaf-covered path",
+        "Small tan terrier mix licking its nose, on a leash in the grass",
+        "Rottweiler with tongue out, standing in grass among small white flowers",
+        "Chocolate Labrador sitting on grass, looking up with tongue out",
+        "Brown and white dog sitting in the sand, smiling with mouth open",
+        "Border Collie sitting on grass with front paws raised, holding a stick",
+        "Golden Retriever lying in tall grass with tongue out, next to a yellow frisbee"
       ]
     }
   },
@@ -181,10 +199,26 @@
       "1to4": "1 to 4x per week"
     },
     "transport": {
-      "r0_3": { "range": "0 km – 3 km", "one": "€3.50", "both": "€7" },
-      "r3_7": { "range": "3.1 km – 7 km", "one": "€5.50", "both": "€11" },
-      "r7_12": { "range": "7.1 km – 12 km", "one": "€8", "both": "€16" },
-      "r12_20": { "range": "12.1 km – 20 km", "one": "€12.50", "both": "€25" },
+      "r0_3": {
+        "range": "0 km – 3 km",
+        "one": "€3.50",
+        "both": "€7"
+      },
+      "r3_7": {
+        "range": "3.1 km – 7 km",
+        "one": "€5.50",
+        "both": "€11"
+      },
+      "r7_12": {
+        "range": "7.1 km – 12 km",
+        "one": "€8",
+        "both": "€16"
+      },
+      "r12_20": {
+        "range": "12.1 km – 20 km",
+        "one": "€12.50",
+        "both": "€25"
+      },
       "r20plus": {
         "range": "More than 20 km",
         "one": "€15 + €0.80/km extra",
