@@ -18,7 +18,7 @@ export default function LogoBand() {
     >
       <Img
         src="/site/logo.webp"
-        alt={t('common.brand.name')}
+        alt=""
         loading="eager"
         width={200}
         height={200}
