@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.1](https://github.com/dippas/pets-da-ines/compare/v1.6.0...v1.6.1) (2026-09-05)
+
+### Refactoring
+
+* **ui:** add prose-invert utility ([#21](https://github.com/dippas/pets-da-ines/issues/21)) ([258570f](https://github.com/dippas/pets-da-ines/commit/258570ff6b76fce95e322c51cc994bdbe6c52098))
+
 ## [1.6.0](https://github.com/dippas/pets-da-ines/compare/v1.5.2...v1.6.0) (2026-09-05)
 
 ### Features
