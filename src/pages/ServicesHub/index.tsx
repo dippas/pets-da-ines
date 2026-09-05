@@ -46,7 +46,7 @@ export default function ServicesHub() {
         <p className="max-w-measure text-lg prose">{t('services.hub.intro')}</p>
       </div>
 
-      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16">
+      <section className="service-section">
         <div className="max-w-measure-lg lg:max-w-none">
           <Label className="step-number">01</Label>
           <h2 className="section-heading">{t('services.petBoarding.title')}</h2>
@@ -64,16 +64,16 @@ export default function ServicesHub() {
         <Img
           src={petBoardingPhoto}
           alt={t('services.petBoarding.photoAlt')}
-          className="h-service-detail w-full rounded-3xl object-cover"
+          className="service-photo"
         />
       </section>
 
       <section className="bg-panel">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16">
+        <div className="service-section">
           <Img
             src={petSittingPhoto}
             alt={t('services.petSitting.photoAlt')}
-            className="h-service-detail w-full order-2 rounded-3xl object-cover lg:order-0"
+            className="service-photo order-2 lg:order-0"
           />
           <div className="max-w-measure-lg lg:max-w-none">
             <Label className="step-number">02</Label>
@@ -97,7 +97,7 @@ export default function ServicesHub() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-8 sm:py-16 lg:grid-cols-2 lg:gap-16">
+      <section className="service-section">
         <div className="max-w-measure-lg lg:max-w-none">
           <Label className="step-number">03</Label>
           <h2 className="section-heading">{t('services.dogWalking.title')}</h2>
@@ -115,7 +115,7 @@ export default function ServicesHub() {
         <Img
           src={dogWalkingPhoto}
           alt={t('services.dogWalking.photoAlt')}
-          className="h-service-detail w-full rounded-3xl object-cover"
+          className="service-photo"
         />
       </section>
 

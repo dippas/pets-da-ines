@@ -34,6 +34,7 @@
   --container-measure-sm: 52ch;
   --container-measure: 62ch;
   --container-measure-lg: 64ch;
+  --container-service-photo: clamp(16rem, 80vw, 22.5rem);
 
   --radius-blob-top: 16.25rem;
   --radius-blob-bottom: 2.25rem;
@@ -173,6 +174,14 @@
 
 @utility section-heading {
   @apply mb-6 text-3xl font-bold text-ink sm:text-4xl;
+}
+
+@utility service-section {
+  @apply mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:grid-cols-2 sm:px-8 sm:py-16 lg:gap-16;
+}
+
+@utility service-photo {
+  @apply mx-auto aspect-square w-full max-w-service-photo rounded-3xl object-cover sm:max-w-none lg:aspect-auto lg:h-service-detail;
 }
 
 @utility btn-outline {
