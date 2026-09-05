@@ -17,6 +17,7 @@
     "@phosphor-icons/react": "^2.1.10",
     "@tailwindcss/vite": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/functions": "^3.9.5",
     "clsx": "^2.1.1",
     "isbot": "^5.2.1",
     "react": "^19.2.8",
