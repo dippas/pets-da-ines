@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.0](https://github.com/dippas/pets-da-ines/compare/v1.4.2...v1.5.0) (2026-09-05)
+
+### Features
+
+* **pricing:** improve simulator layout on mobile and tablet ([#17](https://github.com/dippas/pets-da-ines/issues/17)) ([aa4db9e](https://github.com/dippas/pets-da-ines/commit/aa4db9e644aae3b8fd8b509da7fad60bc4d17c4b))
+
 ## [1.4.2](https://github.com/dippas/pets-da-ines/compare/v1.4.1...v1.4.2) (2026-09-05)
 
 ### Refactoring
