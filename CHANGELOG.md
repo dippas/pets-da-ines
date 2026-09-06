@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.7](https://github.com/dippas/pets-da-ines/compare/v1.6.6...v1.6.7) (2026-09-06)
+
+### Bug Fixes
+
+* **home:** stop testimonial dates from going stale ([#27](https://github.com/dippas/pets-da-ines/issues/27)) ([2e12a12](https://github.com/dippas/pets-da-ines/commit/2e12a12e79c0241d47b3fad8555c8b66bf028c91))
+
 ## [1.6.6](https://github.com/dippas/pets-da-ines/compare/v1.6.5...v1.6.6) (2026-09-05)
 
 ### Bug Fixes
