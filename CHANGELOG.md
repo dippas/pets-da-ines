@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.2](https://github.com/dippas/pets-da-ines/compare/v1.7.1...v1.7.2) (2026-09-07)
+
+### Bug Fixes
+
+* **photos:** align weekly rotation bucket to Monday ([#31](https://github.com/dippas/pets-da-ines/issues/31)) ([fab04b5](https://github.com/dippas/pets-da-ines/commit/fab04b5119238cd77370606912cb1ad6dc5022fa))
+
 ## [1.7.1](https://github.com/dippas/pets-da-ines/compare/v1.7.0...v1.7.1) (2026-09-07)
 
 ### Bug Fixes
