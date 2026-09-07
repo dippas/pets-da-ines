@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.1](https://github.com/dippas/pets-da-ines/compare/v1.7.0...v1.7.1) (2026-09-07)
+
+### Bug Fixes
+
+* **cron:** run photo rotation from middleware so Vercel builds it ([#30](https://github.com/dippas/pets-da-ines/issues/30)) ([34b224b](https://github.com/dippas/pets-da-ines/commit/34b224b0c94ae88c919068847d294a3e6ede43b7))
+
 ## [1.7.0](https://github.com/dippas/pets-da-ines/compare/v1.6.7...v1.7.0) (2026-09-07)
 
 ### Features
