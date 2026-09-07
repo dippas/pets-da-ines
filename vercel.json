@@ -5,6 +5,12 @@
   "git": {
     "deploymentEnabled": false
   },
+  "crons": [
+    {
+      "path": "/api/cron/rotate-photos",
+      "schedule": "0 14 * * 1"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
