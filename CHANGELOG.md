@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.0](https://github.com/dippas/pets-da-ines/compare/v1.6.7...v1.7.0) (2026-09-07)
+
+### Features
+
+* **cron:** move photo rotation to Vercel cron + deploy hook ([#29](https://github.com/dippas/pets-da-ines/issues/29)) ([c5a5d89](https://github.com/dippas/pets-da-ines/commit/c5a5d89e159e27c97327f73e944013c7afc6c905))
+
 ## [1.6.7](https://github.com/dippas/pets-da-ines/compare/v1.6.6...v1.6.7) (2026-09-06)
 
 ### Bug Fixes
