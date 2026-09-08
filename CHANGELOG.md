@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.3](https://github.com/dippas/pets-da-ines/compare/v1.7.2...v1.7.3) (2026-09-08)
+
+### Performance Improvements
+
+* **home:** responsive hero images, gallery CLS fix, shared vendor chunk ([#32](https://github.com/dippas/pets-da-ines/issues/32)) ([4a65f55](https://github.com/dippas/pets-da-ines/commit/4a65f55a9b96458d9ce4db19f9ee79957a32217a))
+
 ## [1.7.2](https://github.com/dippas/pets-da-ines/compare/v1.7.1...v1.7.2) (2026-09-07)
 
 ### Bug Fixes
