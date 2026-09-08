@@ -34,6 +34,8 @@ export default function Home() {
         <div className="relative">
           <Img
             src="/site/hero.webp"
+            srcSet="/site/hero-384.webp 384w, /site/hero.webp 768w"
+            sizes="100vw"
             alt={t('home.heroAlt')}
             width={768}
             height={1024}
@@ -87,6 +89,8 @@ export default function Home() {
           <PawBlob className="absolute -top-4.5 -right-4.5 size-47.5 rotate-12 opacity-40" />
           <Img
             src="/site/hero.webp"
+            srcSet="/site/hero-384.webp 384w, /site/hero.webp 768w"
+            sizes="32rem"
             alt={t('home.heroAlt')}
             width={768}
             height={1024}
@@ -178,10 +182,13 @@ export default function Home() {
                     <Button
                       to={item.url}
                       variant="bare"
-                      ariaLabel={t('home.testimonials.viewOnGoogle')}
-                      className="text-xs text-off-white-muted hover:text-off-white-secondary hover:underline"
+                      className="text-xs text-off-white-strong hover:text-off-white hover:underline"
                     >
                       {item.date}
+                      <span className="sr-only">
+                        {' '}
+                        · {t('home.testimonials.viewOnGoogle')}
+                      </span>
                     </Button>
                   </div>
                 </footer>

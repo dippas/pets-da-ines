@@ -15,6 +15,8 @@ export default function About() {
           />
           <Img
             src="/site/about.webp"
+            srcSet="/site/about-384.webp 384w, /site/about.webp 768w"
+            sizes="(min-width: 64rem) 32rem, 100vw"
             alt={t('about.photoAlt')}
             width={768}
             height={1029}
