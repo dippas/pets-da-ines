@@ -7,6 +7,8 @@ interface ImgProps {
   loading?: 'lazy' | 'eager'
   decoding?: 'sync' | 'async' | 'auto'
   fetchPriority?: 'high' | 'low' | 'auto'
+  srcSet?: string
+  sizes?: string
 }
 
 export default function Img({
@@ -18,10 +20,14 @@ export default function Img({
   loading = 'lazy',
   decoding = 'async',
   fetchPriority = 'auto',
+  srcSet,
+  sizes,
 }: ImgProps) {
   return (
     <img
       src={src}
+      srcSet={srcSet}
+      sizes={sizes}
       alt={alt}
       width={width}
       height={height}

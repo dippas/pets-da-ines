@@ -15,9 +15,28 @@ process.env.VITE_PHOTO_WEEK = String(
   Math.floor((Date.now() - EPOCH_TO_MONDAY) / WEEK_MS),
 )
 
+const SHARED_DIRS = [
+  '/src/components/',
+  '/src/hooks/',
+  '/src/icons/',
+  '/src/lib/',
+  '/src/data/',
+]
+
 export default defineConfig({
   plugins: [reactRouter(), tailwindcss()],
   ssr: {
     noExternal: ['react-cookie-consent'],
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (SHARED_DIRS.some((dir) => id.includes(dir))) {
+            return 'shared'
+          }
+        },
+      },
+    },
   },
 })

@@ -252,3 +252,13 @@
     @apply static mt-0 border-ink-subtle bg-white hover:border-indigo;
   }
 }
+
+.swiper-gallery {
+  @apply h-[calc(124.03cqw-0.32rem)] overflow-hidden;
+
+  @variant sm {
+    & {
+      @apply h-[calc(66.67cqw-0.75rem)];
+    }
+  }
+}
