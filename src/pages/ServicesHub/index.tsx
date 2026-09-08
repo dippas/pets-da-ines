@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
-import type { CSSProperties } from 'react'
-import { A11y, Navigation } from 'swiper/modules'
+import { type CSSProperties, useState } from 'react'
+import { A11y, Navigation, Virtual } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useTranslations } from 'use-intl'
 import Button from '../../components/Button'
@@ -8,6 +8,7 @@ import Img from '../../components/Img'
 import Label from '../../components/Label'
 import { useLocale } from '../../hooks/useLocale'
 import PawBlob from '../../icons/PawBlob'
+import { cn } from '../../lib/cn'
 import {
   galleryOrder,
   servicePhoto,
@@ -17,9 +18,12 @@ import { pagePath } from '../../routes/paths'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
+const GALLERY_SKELETON_COLUMNS = [0, 1, 2, 3]
+
 export default function ServicesHub() {
   const t = useTranslations()
   const locale = useLocale()
+  const [galleryReady, setGalleryReady] = useState(false)
   const pricingPath = pagePath('pricing', locale)
   const dogWalkingPool = servicePhotoPool('dog-walking')
   const petBoardingPhoto = servicePhoto('pet-boarding')
@@ -128,7 +132,7 @@ export default function ServicesHub() {
             </h2>
           </div>
           <div
-            className="swiper-nav-light relative"
+            className="swiper-nav-light @container relative"
             style={
               {
                 '--swiper-navigation-color': 'var(--color-indigo)',
@@ -147,38 +151,56 @@ export default function ServicesHub() {
                 aria-label={t('common.carousel.next')}
               />
             </div>
-            <Swiper
-              modules={[Navigation, A11y]}
-              navigation={{
-                prevEl: '.carousel-nav-prev',
-                nextEl: '.carousel-nav-next',
-                addIcons: false,
-              }}
-              spaceBetween={12}
-              slidesPerView={2.15}
-              breakpoints={{ 768: { slidesPerView: 4 } }}
-              a11y={{
-                prevSlideMessage: t('common.carousel.previous'),
-                nextSlideMessage: t('common.carousel.next'),
-              }}
-            >
-              {galleryColumns.map((column) => (
-                <SwiperSlide key={column[0]}>
-                  <div className="flex flex-col gap-3">
-                    {column.map((index) => (
-                      <Img
-                        key={index}
-                        src={dogWalkingPool[index]}
-                        alt={dogWalkingGalleryAlt[index]}
-                        width={768}
-                        height={1024}
-                        className="aspect-3/4 w-full rounded-2xl object-cover"
-                      />
-                    ))}
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <div className="swiper-gallery relative">
+              {!galleryReady && (
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 grid grid-cols-2 gap-3 sm:grid-cols-4"
+                >
+                  {GALLERY_SKELETON_COLUMNS.map((column) => (
+                    <div key={column} className="flex flex-col gap-3">
+                      <div className="aspect-3/4 w-full animate-pulse rounded-2xl bg-off-white/10" />
+                      <div className="aspect-3/4 w-full animate-pulse rounded-2xl bg-off-white/10" />
+                    </div>
+                  ))}
+                </div>
+              )}
+              <Swiper
+                modules={[Navigation, A11y, Virtual]}
+                onSwiper={() => setGalleryReady(true)}
+                navigation={{
+                  prevEl: '.carousel-nav-prev',
+                  nextEl: '.carousel-nav-next',
+                  addIcons: false,
+                }}
+                virtual={{ addSlidesBefore: 1, addSlidesAfter: 1 }}
+                spaceBetween={12}
+                slidesPerView={2.15}
+                breakpoints={{ 768: { slidesPerView: 4 } }}
+                a11y={{
+                  prevSlideMessage: t('common.carousel.previous'),
+                  nextSlideMessage: t('common.carousel.next'),
+                }}
+                className={cn(!galleryReady && 'invisible')}
+              >
+                {galleryColumns.map((column, columnIndex) => (
+                  <SwiperSlide key={column[0]} virtualIndex={columnIndex}>
+                    <div className="flex flex-col gap-3">
+                      {column.map((index) => (
+                        <Img
+                          key={index}
+                          src={dogWalkingPool[index]}
+                          alt={dogWalkingGalleryAlt[index]}
+                          width={768}
+                          height={1024}
+                          className="aspect-3/4 w-full rounded-2xl object-cover"
+                        />
+                      ))}
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           </div>
         </div>
       </section>
