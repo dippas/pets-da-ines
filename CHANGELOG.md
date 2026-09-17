@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.8.0](https://github.com/dippas/pets-da-ines/compare/v1.7.4...v1.8.0) (2026-09-17)
+
+### Features
+
+* **sitemap:** generate at build with commit-date lastmod ([#34](https://github.com/dippas/pets-da-ines/issues/34)) ([6201d38](https://github.com/dippas/pets-da-ines/commit/6201d387f87308b662d83917012c7ed54ff2f8f5))
+
 ## [1.7.4](https://github.com/dippas/pets-da-ines/compare/v1.7.3...v1.7.4) (2026-09-17)
 
 ### Bug Fixes
