@@ -1,6 +1,7 @@
 import { reactRouter } from '@react-router/dev/vite'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
+import { sitemap } from './vite-plugin-sitemap'
 
 const DAY_MS = 24 * 60 * 60 * 1000
 const WEEK_MS = 7 * DAY_MS
@@ -24,7 +25,7 @@ const SHARED_DIRS = [
 ]
 
 export default defineConfig({
-  plugins: [reactRouter(), tailwindcss()],
+  plugins: [reactRouter(), tailwindcss(), sitemap()],
   ssr: {
     noExternal: ['react-cookie-consent'],
   },
