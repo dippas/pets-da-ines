@@ -28,3 +28,6 @@ public/serve.json
 *.sw?
 .vscode/
 .env*
+
+# skills
+.impeccable
