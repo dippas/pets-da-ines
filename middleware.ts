@@ -1,6 +1,9 @@
 import { next } from '@vercel/functions'
-import { version } from './package.json'
-import { pageForPath } from './src/routes/paths'
+// node ESM, not a bundle: json has no named exports, specifiers need extensions
+import pkg from './package.json' with { type: 'json' }
+import { pageForPath } from './src/routes/paths.js'
+
+const { version } = pkg
 
 // the react-router preset builds through @vercel/remix-builder, which drops the
 // whole api/ directory (ignoreRuntimes: ["@vercel/node"]); middleware is the one
