@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.8.2](https://github.com/dippas/pets-da-ines/compare/v1.8.1...v1.8.2) (2026-09-17)
+
+### Bug Fixes
+
+* **middleware:** load imports the node runtime can resolve ([#36](https://github.com/dippas/pets-da-ines/issues/36)) ([833a931](https://github.com/dippas/pets-da-ines/commit/833a93134e3c2095353c8282c055ed98fd848816))
+
 ## [1.8.1](https://github.com/dippas/pets-da-ines/compare/v1.8.0...v1.8.1) (2026-09-17)
 
 ### Chores
