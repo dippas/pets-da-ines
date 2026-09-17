@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.4](https://github.com/dippas/pets-da-ines/compare/v1.7.3...v1.7.4) (2026-09-17)
+
+### Bug Fixes
+
+* **middleware:** answer unknown paths with 404 ([#33](https://github.com/dippas/pets-da-ines/issues/33)) ([8fcd757](https://github.com/dippas/pets-da-ines/commit/8fcd757cc871db913be7ae269163169d2f82a355))
+
 ## [1.7.3](https://github.com/dippas/pets-da-ines/compare/v1.7.2...v1.7.3) (2026-09-08)
 
 ### Performance Improvements
