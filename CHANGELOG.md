@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.8.1](https://github.com/dippas/pets-da-ines/compare/v1.8.0...v1.8.1) (2026-09-17)
+
+### Chores
+
+* **vercel:** noindex vercel.app deployment URLs ([#35](https://github.com/dippas/pets-da-ines/issues/35)) ([3a6f901](https://github.com/dippas/pets-da-ines/commit/3a6f9013636116a782eb5056f55894ca7dd50f88))
+
 ## [1.8.0](https://github.com/dippas/pets-da-ines/compare/v1.7.4...v1.8.0) (2026-09-17)
 
 ### Features
