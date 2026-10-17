@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.8.3](https://github.com/dippas/pets-da-ines/compare/v1.8.2...v1.8.3) (2026-10-17)
+
+### Bug Fixes
+
+* **alert:** potential fix for code scanning alert no. 2: Workflow does not contain permissions ([#38](https://github.com/dippas/pets-da-ines/issues/38)) ([8845788](https://github.com/dippas/pets-da-ines/commit/884578889232cd3d7a5afd8b41427e3edcd1e952))
+
 ## [1.8.2](https://github.com/dippas/pets-da-ines/compare/v1.8.1...v1.8.2) (2026-09-17)
 
 ### Bug Fixes
