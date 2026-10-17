@@ -4,6 +4,7 @@
 
 ### Bug Fixes
 
+* **alert:** potential fix for code scanning alert no. 1: Workflow does not contain permissions ([#37](https://github.com/dippas/pets-da-ines/issues/37)) ([cd37937](https://github.com/dippas/pets-da-ines/commit/cd3793759683d5ee2d7f4c5b4dc7bfe862006ab6))
 * **alert:** potential fix for code scanning alert no. 2: Workflow does not contain permissions ([#38](https://github.com/dippas/pets-da-ines/issues/38)) ([8845788](https://github.com/dippas/pets-da-ines/commit/884578889232cd3d7a5afd8b41427e3edcd1e952))
 
 ## [1.8.2](https://github.com/dippas/pets-da-ines/compare/v1.8.1...v1.8.2) (2026-09-17)
