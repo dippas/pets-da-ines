@@ -9,7 +9,7 @@ export default {
           { breaking: true, release: 'major' },
           { type: 'feat', release: 'minor' },
           { type: 'fix', release: 'patch' },
-          { type: 'docs', release: 'patch' },
+          { type: 'docs', release: false },
           { type: 'style', release: 'patch' },
           { type: 'chore', release: 'patch' },
           { type: 'test', release: 'patch' },
