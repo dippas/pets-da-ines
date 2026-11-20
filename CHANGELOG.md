@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.4](https://github.com/dippas/pets-da-ines/compare/v1.8.3...v1.8.4) (2026-11-20)
+
+### Bug Fixes
+
+* **deps:** bump semantic-release to v26 and node to 26 ([#41](https://github.com/dippas/pets-da-ines/issues/41)) ([bcd4a44](https://github.com/dippas/pets-da-ines/commit/bcd4a44e9366570b42f4de870b7317ef79f600e6))
+
+### Chores
+
+* **deps:** update dependencies ([#40](https://github.com/dippas/pets-da-ines/issues/40)) ([f3ad66e](https://github.com/dippas/pets-da-ines/commit/f3ad66e3f99c65238f3143c2805705f89bed2d74))
+
+### Build System
+
+* **release:** stop releasing on docs commits [skip ci] ([#39](https://github.com/dippas/pets-da-ines/issues/39)) ([5184733](https://github.com/dippas/pets-da-ines/commit/51847338bcd975ff12dbd3ddceb94f6adc81cb3b))
+
 ## [1.8.3](https://github.com/dippas/pets-da-ines/compare/v1.8.2...v1.8.3) (2026-10-17)
 
 ### Bug Fixes
